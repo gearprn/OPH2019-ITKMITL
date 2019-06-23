@@ -61,6 +61,10 @@ general
 	font-size: 1.5em;
 }
 
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
 /*--------------------
 info section
 ---------------------*/
@@ -159,12 +163,6 @@ workshop section
 	color: white;
 }
 
-.workshopCard img:hover{
-	height: 135px;
-	border: 4px solid #2da9dd;
-	border-radius: 15px;
-}
-
 /*--------------------
 workshop section
 ---------------------*/
@@ -225,6 +223,15 @@ responsive
     .activityCard, .competitionCard {
 		height: 250px;
 	}
+	.workshopCard img {
+		height: 75px;
+	}
+	.rallyCard {
+	color: #777;
+	border-radius: 15px;
+	height: 365px;
+	padding: 1em;
+}
 }
 
 @media screen and (max-width: 768px) {
