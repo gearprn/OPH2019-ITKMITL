@@ -17,8 +17,16 @@ p, a {font-size: 1.25em;}
 h2.header {
     font-size: 1.4em;
     color: #31364c;
-    padding-bottom: 15px;
     text-align: center;
+    border-bottom: 2px #3288d5 solid;
+    width: 100%;
+    line-height: 0.1em;
+    padding-top: 10px;
+}
+
+h2.header span {
+    background: #fafdff;
+    padding: 0 10px;
 }
 
 /*--------------------
