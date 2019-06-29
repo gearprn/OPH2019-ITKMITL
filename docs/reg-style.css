@@ -1,33 +1,28 @@
+/***-------------------------
+
+    Style sheet of Open House
+    Register page
+
+-------------------------***/
 /*--------------------
 font
 ---------------------*/
 @import url('https://fonts.googleapis.com/css?family=Kanit|Mitr:200,300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Baloo&display=swap');
 
-body {
-    background: -webkit-linear-gradient(top, #3288d5, #3288d5 30%, #f5f9fd 30%, #f5f9fd);
+html, body {
+    background-color: #3288d5 !important;
+    padding: 0;
+    position: relative;
+    font-family: 'Baloo', cursive;
+    font-family: 'Mitr', sans-serif;
 }
 
 p {font-weight: 300;}
-body {font-family: 'Mitr', sans-serif;}
 h1, h2{font-family: 'Kanit', sans-serif;}
 h1 {font-size: 2.4em;}
 a {color: #FFF;font-family: 'Kanit', sans-serif;}
 p, a {font-size: 1.25em;}
-
-h2.header {
-    font-size: 1.4em;
-    color: #31364c;
-    text-align: center;
-    border-bottom: 2px #3288d5 solid;
-    width: 100%;
-    line-height: 0.1em;
-    padding-top: 10px;
-}
-
-h2.header span {
-    background: #fafdff;
-    padding: 0 10px;
-}
 
 /*--------------------
 button
@@ -45,8 +40,18 @@ a.btn:hover {
     transition: all 0.2s ease;
 }
 
-a.nav-link {
-    font-size: 1.25em;
+button.navbar-toggler {
+    background: #2674ba !important;
+}
+
+span.navbar-toggler-icon {
+    color: #f5f9fd !important;
+}
+
+button.btn-info {
+    -webkit-border-radius:5px !important;
+    margin-top: 1.7rem !important;
+    background-color: #0b2337 !important;
 }
 
 /*------------------
@@ -69,7 +74,18 @@ Nav Bar
 }
 
 .navbar {
-    background: #f5f9fd;
+    background: #1c5589;
+}
+
+a.nav-link {
+    font-size: 1.25em;
+    color: #f5f9fd !important;
+}
+
+span.navbar-text {
+    font-size: 0.75em !important;
+    padding:12px 0 12px;
+    margin: 0 auto !important;
 }
 
 /*----------------- 
@@ -77,20 +93,93 @@ Body
 ------------------*/
 
 .main-panel {
-    border: #e4e4e4 1px solid;
-    -webkit-border-radius:3px;
-    background: #fafdff;
+    border: none;
+    background: transparent;
     width: 100%;
     height: 100vh;
-    margin: 45px 0;
+    margin: 0 0;
     padding-top: 15px;
+    display: flex;
 }
 
 .border-h1 {
     padding-top: 40px;
     font-size: 1.7em;
-    text-align: left;
+    text-align: center;
     color: #f5f9fd;
+    border-bottom: #4291d8 solid 1px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+}
+
+h2.header {
+    font-size: 2.7em;
+    color: #b4d4f0;
+    padding-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Baloo', cursive;
+    margin-bottom: 25px;
+    padding-right: 20px;
+}
+
+/***-----------
+   FORM PART
+-----------***/
+
+form {
+    font-family: Kanit;
+}
+
+h3.row-title {
+    color: #e5f0fa;
+    font-size: 1.2em;
+    font-family: Kanit;
+}
+
+h3.row-title i {
+    padding-right: 10px;
+}
+
+input[type=text], input[type=email], textarea.form-control, .md-form, .md-outline{
+    border-color:#a4caec !important;
+    color: #e5f0fa !important;
+}
+
+.md-form, .md-outline{
+    margin-top: .8rem !important;
+    margin-bottom: .8rem !important;
+}
+
+.md-form.md-outline label {
+    color: #e5f0fa !important;
+}
+
+.md-form.md-outline label.active {
+    background-color: #d57f32 !important;
+    color: #f5f9fd !important;
+}
+
+select.custom-select {
+    color: #e5f0fa !important;
+    border:none;
+    background-color: #2674ba !important;
+    cursor: pointer;
+    margin-top: .8rem;
+    margin-bottom: .7rem;
+    box-shadow: none;
+    display: block;
+
+}
+
+.end-border {
+    border-bottom: 1px solid #4291d8;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+.btn-opt {
+    background-color: #fafafa !important;
 }
 
 /*---------------
@@ -104,6 +193,21 @@ Responsive Part
 @media screen and (max-width: 991px) {
     a.nav-link, li {
         font-size: 1.25em;
+    }
+        h2.header {
+        font-size: 2.4em;
+        padding-right: 0;
+        border-bottom: #4291d8 solid 1px;
+    }
+
+    .main-panel {
+        display: block;
+    }
+
+    .border-h1 {
+    border:none;
+    margin-bottom: 0;
+    padding-bottom: 0;
     }
 }
 
@@ -124,12 +228,31 @@ Responsive Part
         font-size: 0.95em;
     }
 
+    h2.header {
+        font-size: 2.4em;
+        padding-right: 0;
+    }
+
+    .main-panel {
+        display: block;
+    }
+
+    .border-h1 {
+    border:none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    }
+
+}
+
 
 @media screen and (max-width: 568px) {
     a.nav-link, li {
         font-size: 1em;
     }
-
+    h2.header {
+        font-size: 2.2em;
+    }
 }
 
 
@@ -137,7 +260,6 @@ Responsive Part
     a.nav-link, li {
         font-size: 1em;
     }
-    h1.border-h1 {text-align: center;}
 }
 
 
