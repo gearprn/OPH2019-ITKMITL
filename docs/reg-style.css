@@ -49,7 +49,7 @@ span.navbar-toggler-icon {
 }
 
 button.btn-info {
-    -webkit-border-radius:5px !important;
+    -webkit-border-radius:4px !important;
     margin-top: 1.7rem !important;
     background-color: #0b2337 !important;
 }
