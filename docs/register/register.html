@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#3288d5" />
+    <title>Register - Kmitl Open House 2019</title>
+
+    <link rel="stylesheet" type="text/css" href="reg-style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.3/css/mdb.min.css" rel="stylesheet">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href=""><img src="https://via.placeholder.com/90" class="d-inline-block align-top" alt=""></a>
+                
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mr-auto">
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="">หน้าหลัก</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">กำหนดการ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+<!--- Body --->
+<div class="container">
+<h1 class="border-h1">สมัครเข้าทดสอบบีบลาสไทยแลนด์ 2019: การทดสอบทักษะการคิดเชิงคำนวณ <br> (Bebras Thailand 2018: A Computational Thinking Skill Challenge)</h1>
+</div>
+<div class="container main-panel">
+  <!--- 
+   Begin Form
+    --->
+  <form style="padding-bottom: 95px;">
+    <!--- First Section --->
+    <h3 class="row-title"><i class="fas fa-user"></i>ข้อมูลนักเรียน</h3>
+    <div class="form-row align-items-center end-border">
+
+      <div class="col-md-12">
+        <div class="md-form md-outline">
+          <input type="text" id="form1" class="form-control" name="name" autofocus required>
+          <label for="form1">ชื่อจริง-นามสกุล*</label>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <div class="md-form md-outline">
+          <input type="text" id="form2" class="form-control" name="person_id" required>
+          <label for="form2">หมายเลขประจำตัวประชาชน*</label>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="md-form md-outline">
+          <input type="text" id="form3" class="form-control" name="age" required>
+          <label for="form3">อายุ</label>
+        </div>
+      </div>
+      <div class="col-sm">
+          <select class="browser-default custom-select">
+            <option selected>ระดับการศึกษา</option>
+            <option value="1">มัธยมศึกษาปีที่ 1</option>
+            <option value="2">มัธยมศึกษาปีที่ 2</option>
+            <option value="3">มัธยมศึกษาปีที่ 3</option>
+            <option value="4">มัธยมศึกษาปีที่ 4</option>
+            <option value="5">มัธยมศึกษาปีที่ 5</option>
+            <option value="6">มัธยมศึกษาปีที่ 6</option>
+            <option value="7">ปวช.</option>
+            <option value="8">ปวส.</option>
+          </select>
+      </div>
+
+      <div class="col-md-12">
+        <div class="md-form md-outline">
+          <input type="text" id="form4" class="form-control" name="school" required>
+          <label for="form4">ชื่อสถานศึกษา*</label>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="md-form md-outline">
+          <input type="text" id="form5" class="form-control" name="tel" required> 
+          <label for="form5">เบอร์โทรศัพท์*</label>
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+        <div class="md-form md-outline">
+          <input type="email" id="form6" class="form-control" name="email" required>
+          <label for="form6">อีเมล*</label>
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-info btn-lg btn-block" type="submit">ส่งเลย!</button>
+  </form>
+</div>
+<!--- Footer --->
+<footer style="">
+<nav class="navbar fixed-bottom navbar-dark bg-dark">
+<div class="container" >
+  <span class="navbar-text">
+    © 2019, Faculty of Information Technology @KMITL. All right reserved.
+  </span>
+</div>
+</nav>
+</footer>
+<!-- Included script -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.3/js/mdb.min.js"></script>
+</body>
+</html>
