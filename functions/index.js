@@ -1,8 +1,6 @@
 const functions = require('firebase-functions');
+require('custom-env').env();
 
-// // Create and Deploy Your First Cloud Functions
-// // https://firebase.google.com/docs/functions/write-firebase-functions
-//
-// exports.helloWorld = functions.https.onRequest((request, response) => {
-//  response.send("Hello from Firebase!");
-// });
+//const test = require('./controller/testController.js');
+
+//exports.test = functions.https.onRequest(test);
