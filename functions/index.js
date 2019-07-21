@@ -1,6 +1,6 @@
 const functions = require('firebase-functions');
 require('custom-env').env();
 
-//const test = require('./controller/testController.js');
+const event = require('./controller/eventController.js');
 
-//exports.test = functions.https.onRequest(test);
+exports.event = functions.https.onRequest(event);
