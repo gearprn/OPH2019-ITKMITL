@@ -108,6 +108,7 @@ event.post('/esport', async (request, response) => {
             advisorName: request.body.advisorName,
             advisorEmail: request.body.advisorEmail,
             advisorTel: request.body.advisorTel,
+            teamType: request.body.teamType,
             createAt: new Date()
         };
 
