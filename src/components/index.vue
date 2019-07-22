@@ -12,7 +12,7 @@
                     <h2>ตั้งแต่เวลา 9.00 เป็นต้นไป</h2>
                     <p>เปิดบ้านไอทีลาดกระบัง "IT LADKRABANG OPEN HOUSE 2019" กลับมาอีกครั้งกับการเปิดบ้านสร้างมุมมองใหม่ ค้นหาคำตอบในสิ่งที่ชอบ พร้อมด้วยการสร้างโอกาสในการเตรียมตัวสู่ไอทีลาดกระบัง มาพบคำตอบได้ในงานนี้ทั้งสาระและความสนุกจากกิจกรรมมากมาย จัดโดยคณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
                     <a href="" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">กำหนดการ</a>
-                    <a href="" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">ลงทะเบียนสำหรับผู้เข้าชมงาน</a>
+                    <a href="https://oph2019-kmitl-c2dac.web.app/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">ลงทะเบียนสำหรับผู้เข้าชมงาน</a>
                 </div>  
             </div>
         </section>
@@ -37,7 +37,6 @@
                     </div>
                 </div>
                 <a href="https://www.bebrasthailand.org/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">อ่านลายละเอียด</a>
-                <a href="" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">สมัครเข้าทดสอบ</a>
             </div>
         </section>
 
@@ -50,7 +49,7 @@
                     <div class="col-lg-12">
                         <h2>เรื่องราวดีๆ ที่ IT ลาดกระบัง</h2>
                         <h3>เรื่อง "ปลดล๊อคทางความคิดอย่ายึดติดกับ IT แบบเดิมๆ"</h3>
-                        <p>การใช้ชีวิตในไอที ลาดกระบัง การเรียน อยู่หอ เรื่องราวดีๆ ที่พี่อยากมาแบ่งบันน้องๆ ทุกคน</p>
+                        <!-- <p>การใช้ชีวิตในไอที ลาดกระบัง การเรียน อยู่หอ เรื่องราวดีๆ ที่พี่อยากมาแบ่งบันน้องๆ ทุกคน</p> -->
                         <hr>
                         <p>สถานที่ ห้องประชุมใหญ่ (Auditorium) | วันศุกร์ที่ 23 สิงหาคม 2562 | เวลา 10.00 – 11.30 น.</p>
                         <p>ไขทุกข้อสงสัย เปิดมุมมองใหม่ หมดยุคเรียนไอทีแบบเดิมๆ รู้ก่อนเลือกเรียนจะได้ไม่เสียเวลา พบกับเสวนาการศึกษาที่มาพร้อมกับความบันเทิง  พร้อมรับของที่ระลึกแสนเก๋ในงาน พบกันได้ที่งานเปิดบ้านคณะไอทีลาดกระบัง : IT Ladkrabang Open House  2019</p>
@@ -67,7 +66,7 @@
                     <hr>
                     <div class="row">
                         <div class="col-lg-3 col-6 gridCard">
-                            <a href="">
+                            <a @click="infoToBe()" style="cursor:pointer;">
                                 <div class="activityCard">
                                     <img src="https://edu.bstudio.click/openhouse-2018/assets/img/event_tobeit.svg">
                                     <h3 class="mt-2">To Be IT@KMITL</h3>
@@ -77,7 +76,7 @@
                             </a>
                         </div>
                         <div class="col-lg-3 col-6 gridCard">
-                            <a href="">
+                            <a @click="infoTour()" style="cursor:pointer;">
                                 <div class="activityCard">
                                     <img src="https://edu.bstudio.click/openhouse-2018/assets/img/event_tour.svg">
                                     <h3 class="mt-2">ทัวร์คณะ</h3>
@@ -87,7 +86,7 @@
                             </a>
                         </div>
                         <div class="col-lg-3 col-6 gridCard">
-                            <a href="">
+                            <a @click="infoSyllabus()" style="cursor:pointer;">
                                 <div class="activityCard">
                                     <img src="https://edu.bstudio.click/openhouse-2018/assets/img/event_cirr.svg">
                                     <h3 class="mt-2">แนะนำหลักสูตรไอทีลาดกระบัง</h3>
@@ -97,7 +96,7 @@
                             </a>
                         </div>
                         <div class="col-lg-3 col-6 gridCard">
-                            <a href="">
+                            <a @click="infoExhibition()" style="cursor:pointer;">
                                 <div class="activityCard">
                                     <img src="https://edu.bstudio.click/openhouse-2018/assets/img/event_show.svg">
                                     <h3 class="mt-2">การแสดงนิทรรศการทางวิชาการ</h3>
@@ -120,38 +119,52 @@
                     </div>
                     <hr>
                     <div class="row">
+
                         <div class="col-lg-3 col-6 gridCard">
-                            <div class="competitionCard">
-                                <img src="https://edu.bstudio.click/openhouse-2018/assets/img/compet_security.svg">
-                                <h3 class="mt-2">การแข่งขันความปลอดภัยของระบบคอมพิวเตอร์</h3>
-                                <h4 class="more-info">ดูรายละเอียด</h4>
-                                <!-- <p>บททดสอบของการยืนหนึ่งทางด้านความปลอดภัยของระบบคอมพิวเตอร์ ใครที่คิดว่ารู้จริงด้านการป้องกันตนเองและผู้อื่น จากภัยคุกคามในอินเทอร์เน็ตและในระบบคอมพิวเตอร์ ...เราพร้อมให้มาพิสูจน์ความเป็นหนึ่ง</p> -->
-                            </div>
+                            <a href="" @click="infoNetSec()">
+                                <div class="competitionCard">
+                                    <img src="https://edu.bstudio.click/openhouse-2018/assets/img/compet_security.svg">
+                                    <h3 class="mt-2">การแข่งขันความปลอดภัยของระบบคอมพิวเตอร์</h3>
+                                    <h4 class="more-info">ดูรายละเอียด</h4>
+                                    <!-- <p>บททดสอบของการยืนหนึ่งทางด้านความปลอดภัยของระบบคอมพิวเตอร์ ใครที่คิดว่ารู้จริงด้านการป้องกันตนเองและผู้อื่น จากภัยคุกคามในอินเทอร์เน็ตและในระบบคอมพิวเตอร์ ...เราพร้อมให้มาพิสูจน์ความเป็นหนึ่ง</p> -->
+                                </div>
+                            </a>
                         </div>
+                        
                         <div class="col-lg-3 col-6 gridCard">
-                            <div class="competitionCard">
-                                <img src="https://edu.bstudio.click/openhouse-2018/assets/img/compet_game.svg">
-                                <h3 class="mt-2">การแข่งขันกีฬาอิเล็กทรอนิกส์ E-Sport</h3>
-                                <h4 class="more-info">ดูรายละเอียด</h4>
-                                <!-- <p>เซียนเกมไม่ควรพลาด สนามประลองความเป็นหนึ่งทางด้าน E-Sport กิจกรรมการแข่งขันกีฬาอิเล็กทรอนิกส์ที่สนับสนุนการเล่นเกมให้เกิดประโยชน์ พร้อมผลักดันให้เกิดการพัฒนาในวงการ E-Sport  ...เราพร้อมให้มาพิสูจน์ความเป็นหนึ่ง</p> -->
-                            </div>
+                            <a href="" @click="infoEsport()">
+                                <div class="competitionCard">
+                                    <img src="https://edu.bstudio.click/openhouse-2018/assets/img/compet_game.svg">
+                                    <h3 class="mt-2">การแข่งขันกีฬาอิเล็กทรอนิกส์ E-Sport</h3>
+                                    <h4 class="more-info">ดูรายละเอียด</h4>
+                                    <!-- <p>เซียนเกมไม่ควรพลาด สนามประลองความเป็นหนึ่งทางด้าน E-Sport กิจกรรมการแข่งขันกีฬาอิเล็กทรอนิกส์ที่สนับสนุนการเล่นเกมให้เกิดประโยชน์ พร้อมผลักดันให้เกิดการพัฒนาในวงการ E-Sport  ...เราพร้อมให้มาพิสูจน์ความเป็นหนึ่ง</p> -->
+                                </div>
+                            </a>
                         </div>
+                    
                         <div class="col-lg-3 col-6 gridCard">
-                            <div class="competitionCard">
-                                <img src="https://edu.bstudio.click/openhouse-2018/assets/img/compet_math.svg">
-                                <h3 class="mt-2">การแข่งขันแก้ปัญหาด้านวิทยาการข้อมูล </h3>
-                                <h4 class="more-info">ดูรายละเอียด</h4>
-                                <!-- <p>น้องๆ คนไหนที่คิดว่ามีความสามารถในการคิดเชิงตัวเลข คิดเชิงวิทยาการข้อมูล และชอบแก้ปัญหาด้วยการวิเคราะห์ข้อมูล เชิญทางนี้ ...เราพร้อมให้มาพิสูจน์ความเป็นหนึ่ง</p> -->
-                            </div>
-                        </div>
+                            <a href="" @click="infoData()">
+                                <div class="competitionCard">
+                                    <img src="https://edu.bstudio.click/openhouse-2018/assets/img/compet_math.svg">
+                                    <h3 class="mt-2">การแข่งขันแก้ปัญหาด้านวิทยาการข้อมูล </h3>
+                                    <h4 class="more-info">ดูรายละเอียด</h4>
+                                    <!-- <p>น้องๆ คนไหนที่คิดว่ามีความสามารถในการคิดเชิงตัวเลข คิดเชิงวิทยาการข้อมูล และชอบแก้ปัญหาด้วยการวิเคราะห์ข้อมูล เชิญทางนี้ ...เราพร้อมให้มาพิสูจน์ความเป็นหนึ่ง</p> -->
+                                </div>
+                            </a>
+                        </div> 
+                    
+                        
                         <div class="col-lg-3 col-6 gridCard">
-                            <div class="competitionCard">
-                                <img src="https://edu.bstudio.click/openhouse-2018/assets/img/compet_website.svg">
-                                <h3 class="mt-2">การแข่งขันพัฒนาเว็บไซต์ด้วย PHP และ JavaScript</h3>
-                                <h4 class="more-info">ดูรายละเอียด</h4>
-                                <!-- <p>เวทีแห่งผู้มีไอเดียสุดบันเจิดในการพัฒนาเว็บไซต์ ที่พร้อมด้วยทักษะการเขียนโปรแกรมด้วยภาษา PHP และ JavaScript ...เราพร้อมให้มาพิสูจน์ความเป็นหนึ่ง</p> -->
-                            </div>
+                            <a href="" @click="infoPHP()">
+                                <div class="competitionCard">
+                                    <img src="https://edu.bstudio.click/openhouse-2018/assets/img/compet_website.svg">
+                                    <h3 class="mt-2">การแข่งขันพัฒนาเว็บไซต์ด้วย PHP และ JavaScript</h3>
+                                    <h4 class="more-info">ดูรายละเอียด</h4>
+                                    <!-- <p>เวทีแห่งผู้มีไอเดียสุดบันเจิดในการพัฒนาเว็บไซต์ ที่พร้อมด้วยทักษะการเขียนโปรแกรมด้วยภาษา PHP และ JavaScript ...เราพร้อมให้มาพิสูจน์ความเป็นหนึ่ง</p> -->
+                                </div>
+                            </a>
                         </div>
+                    
                     </div>
                 </div>
             </div>
@@ -482,10 +495,50 @@
                     </div>
                 </div>
             </div>
-            
-            
         </section>
     
+        <div v-if="showModal">
+            <transition name="fade">
+                <div class="modal-mask">
+                    <div class="modal-wrapper">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title req-field text-center">{{ modalTopic }}</h3>
+                                    <h6 class="modal-title req-field text-center">{{ subTopic }}</h6>
+                                    <button  class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true" @click="showModal = false"><i class="fas fa-times-circle"></i></span>
+                                    </button>
+                                </div>
+
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-sm-12 text-center line-right">
+                                            <small>สถานที่: </small>
+                                            <p>หน้าห้องประชุมใหญ่ (Auditorium)</p>
+                                            <small>วันที่ 23-24 สิงหาคม 2561</small>
+                                            <p>เวลา 09.00 – 16.00 น.</p>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-12 text-left">
+                                            <p>{{ modalmsg }}</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- <div v-if="this.isSubmit == true" class="modal-footer">
+                                    <a id="" @click="yes()" class="btn btn-primary mt-2">ใช่</a>
+                                    <a id="" @click="no()" class="btn btn-primary mt-2">ไม่ใช่ฉัน</a>
+                                </div>
+                                <div v-if="this.isSubmitIsNo == true" class="modal-footer">
+                                    <a id="" @click="register()" class="btn btn-primary mt-2">ลงทะเบียน</a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </transition>
+        </div>
+
     </div>
 </template>
 
@@ -508,13 +561,14 @@ Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.use(BootstrapVue)
 export default {
   name: 'IndexPage',
-  props: {
-    msg: String
-  },
   data () {
         return {
             slide: 0,
-            sliding: null
+            sliding: null,
+            modalmsg: "",
+            showModal: false,
+            modalTopic: "",
+            subTopic: ""
         }
     },
     methods: {
@@ -523,13 +577,50 @@ export default {
         },
         onSlideEnd(slide) {
             this.sliding = false
-        }
+        },
+        infoToBe() {
+            this.modalTopic = "To Be IT@KMIT"
+            this.subTopic = "เตรียมความพร้อมสู่ไอทีลาดกระบัง"
+            this.modalmsg = "เตรียมความพร้อมสู่ไอทีลาดกระบังไปกับ “ToBeIT@KMITL” โดยเหล่าพี่ๆ ที่จะคอยแนะแนวน้องๆ พร้อมกับไขข้อข้องใจที่มีเพื่อการเตรียมสอบเข้าคณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง"
+            this.showModal = true
+        },
+        infoTour() {
+            this.modalTopic = "ทัวร์คณะ"
+            this.subTopic = "เยี่ยมชมคณะไอทีลาดกระบัง"
+            this.modalmsg = "เปิดประสบการณ์ภายในคณะไอทีลาดกระบัง กับการเยี่ยมชมห้องแลปสุดทันสมัย, ห้องเซิร์ฟเวอร์ภายในคณะ, ชุมนุมของนักศึกษาที่น่าสนใจ และสิ่งอำนวยความสะดวกต่างๆสุดครบครัน สัมผัสบรรยากาศจริงของการเรียนสุดเป็นกันเองโดยพี่ๆและอาจารย์"
+            this.showModal = true
+        },
+        infoSyllabus() {
+            this.modalTopic = "แนะนำหลักสูตรไอทีลาดกระบัง"
+            this.subTopic = "เรียนไอทีลาดกระบังเป็นยังไง"
+            this.modalmsg = "มาพูดคุยกับพี่ๆ นักศึกษาของคณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง ไขปัญหาข้อข้องใจไปด้วยกัน ความข้องใจในสาขาวิชาวิทยาการคอมพิวเตอร์, วิศวกรรมคอมพิวเตอร์, วิศวกรรมสารสนเทศ และ เทคโนโลยีสารสนเทศ ต่างกันยังไงและสาขาภายในคณะ เช่น IT, DSBA, BIT คืออะไร ต่างกันยังไง"
+            this.showModal = true
+        },
+        infoExhibition() {
+            this.modalTopic = "การแสดงนิทรรศการทางวิชาการ"
+            this.subTopic = "ผลงานนักศึกษาและคณาจารย์"
+            this.modalmsg = "การจัดแสดงผลงานให้แก่ผู้ที่สนใจได้ชมและศึกษา โดยนำเสนอผลงานต่างๆ ของนักศึกษาระดับปริญญาตรี, ปริญญาโท และ ปริญญาเอก รวมทั้งงานวิจัยของอาจารย์ในคณะฯ ทุกท่านจะได้รับทั้งความรู้ในเชิงวิชาการจากทั้งจากผลงานของนักศึกษา, งานวิจัยภายในคณะ"
+            this.showModal = true
+        },
+        infoNetSec() {
+            this.$router.push('/detailsNetsec')
+        },
+        infoEsport() {
+            this.$router.push('/detailsEsport')
+        },
+        infoData() {
+            this.$router.push('/detailsData')
+        },
+        infoPHP() {
+            this.$router.push('/detailsPhp')
+        },
+
+        
     }
 }
 </script>
 
 <style lang="scss" scoped>
-
 #mainBanner {
     width: 100%;
 }
@@ -542,9 +633,64 @@ b-carousel {
     overflow: hidden;
 }
 
-// #routeSection {
-//     min-height: 600px;
-// }
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+.line-right {
+    border-right: solid white 2px;
+}
+
+.modal-mask {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  display: table;
+  transition: opacity .5 ease;
+}
+
+.modal-dialog {
+    max-width: 50%;
+}
+
+.modal-wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+button.close {
+    padding: 0;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-radius: 50%;
+}
+
+.modal-header {
+    display: block;
+    padding: 1rem 1rem;
+    border-top-left-radius: .3rem;
+    border-top-right-radius: .3rem;
+}
+
+.modal-content {
+    border: none;
+    color: white;
+    background: #2ea9dd;
+    min-height: 35vh;
+}
+
+.modal-header {
+    border: none;
+}v
+
 .fas {
     font-size: 20px;    
 }
@@ -634,6 +780,10 @@ h4.more-info {
     // position: absolute;
     bottom: 0;
     // margin: auto 0;
+}
+
+.more-info:hover {
+    color: #fdb127;
 }
 
 .section {
@@ -840,9 +990,17 @@ responsive
     a.nav-link, li {
     	font-size: 1.25em;
     }
+    .modal-dialog {
+        max-width: 60%; 
+        margin: 1.75rem auto;
+    }
 
 }
 @media screen and (max-width: 991px) {
+    .modal-dialog {
+        max-width: 60%; 
+        margin: 1.75rem auto;
+    }
     a.nav-link, li {
     	font-size: 1.25em;
     }
@@ -870,6 +1028,10 @@ responsive
 }
 
 @media screen and (max-width: 768px) {
+    .modal-dialog {
+        max-width: 60%; 
+        margin: 1.75rem auto;
+    }
 	a.btn {
 		height: 50px;
 		font-size: 1em;
@@ -918,6 +1080,17 @@ responsive
 	a.nav-link, li {
 		font-size: 1em;
 	}
+    .modal-dialog {
+        max-width: 80%; 
+        margin: 1.75rem auto;
+    }
+    button.close {
+        padding: 0;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        border-radius: 50%;
+    }
 }
 
 

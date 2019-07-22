@@ -3,7 +3,7 @@
         <b-navbar toggleable="md" type="light" variant="">
             <div class="container">
 
-                <b-navbar-brand>
+                <b-navbar-brand href="/">
                     <img class="navBrandImg" src="https://openhouse.it.kmitl.ac.th/2018/assets/img/logo-sym.svg">
                 </b-navbar-brand>
 
@@ -11,7 +11,7 @@
                 <b-collapse id="nav-collapse" is-nav>
 
                     <b-navbar-nav class="ml-auto">
-                        <b-nav-item href="">หน้าหลัก</b-nav-item>
+                        <b-nav-item href="/">หน้าหลัก</b-nav-item>
                         <b-nav-item href="">กำหนดการ</b-nav-item>
                     </b-navbar-nav>
                     
