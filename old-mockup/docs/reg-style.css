@@ -24,6 +24,11 @@ h1 {font-size: 2.4em;}
 a {color: #FFF;font-family: 'Kanit', sans-serif;}
 p, a {font-size: 1.25em;}
 
+h2.second-title {
+    font-family: Kanit !important;
+    font-size: 1rem !important;
+}
+
 /*--------------------
 button
 ---------------------*/
@@ -88,6 +93,22 @@ span.navbar-text {
     margin: 0 auto !important;
 }
 
+.mbg {
+        background-color: #0088d3 !important;
+}
+
+a.nav-link.active {
+    background-color: #f19022 !important;
+}
+
+a.nav-link {
+    border-radius: 1.5em 11em !important;
+}
+
+li:nth-child(2) a.nav-link  {
+    border-radius: 11em 1.5em !important;
+}
+
 /*----------------- 
 Body
 ------------------*/
@@ -121,6 +142,79 @@ h2.header {
     font-family: 'Baloo', cursive;
     margin-bottom: 25px;
     padding-right: 20px;
+}
+
+.simple-module {
+    width: 100%;
+    height: auto;
+    margin: 15px auto 120px;
+}
+
+.custom-tabs {
+    padding: 0;
+    height: auto;
+    background: #f5f9fd;
+    border-radius: 1em;
+    margin-top: 20px;
+}
+
+.div-header {
+    background-color: #0b2337;
+    width: 100%;
+    height: auto;
+    border-top-right-radius: .8em;
+    border-top-left-radius: .8em;
+    border-bottom: #b4d4f0 3px solid;
+}
+
+.div-header span {
+    vertical-align: middle;
+    text-align: left;
+    padding: 0 17px;
+    color: #f5f9fd;
+    font-family: Kanit;
+    font-size: .9rem;
+    line-height: 50px;
+}
+
+.row .inner-row {
+    margin:0;
+    padding: 0;
+    font-family: Kanit, Baloo;
+}
+
+.col .custom-col {
+    padding: 15px;
+}
+
+.col .custom-col:nth-child(1) {
+    background-color: #0f2d48;
+    color: #fafafa;
+    border-left: none;
+    text-align: center;
+    line-height: 265%;
+}
+
+.custom-row {
+    background-color: #c4dcf3;
+}
+
+.custom-row hr {
+    border-color: #b4d2f0;
+}
+
+.col .custom-col h4 {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 165%;
+    color: #050e17;
+}
+
+.col .custom-col p {
+    font-size: 1rem;
+    color: #0b2337;
+    font-weight: 400;
+    padding: 0 15px 0 0;
 }
 
 /***-----------
@@ -191,19 +285,31 @@ Responsive Part
     }
 }
 @media screen and (max-width: 991px) {
+    .col .custom-col h4 {
+        text-align: center;
+    }
+    .custom-row {
+        background: #f5f9fd;
+        border-bottom-right-radius: .8em;
+        border-bottom-left-radius: .8em;
+    }
+    .custom-row hr {
+        border-color: #e9ecf0;
+    }
     a.nav-link, li {
         font-size: 1.25em;
     }
-        h2.header {
+    h2.header {
         font-size: 2.4em;
         padding-right: 0;
         border-bottom: #4291d8 solid 1px;
     }
-
+    h2.second-title {
+        padding-top: 15px;
+    }
     .main-panel {
         display: block;
     }
-
     .border-h1 {
     border:none;
     margin-bottom: 0;
@@ -226,6 +332,10 @@ Responsive Part
     }
     p {
         font-size: 0.95em;
+    }
+
+    .div-header span {
+        font-size: .85rem;
     }
 
     h2.header {
@@ -253,6 +363,9 @@ Responsive Part
     h2.header {
         font-size: 2.2em;
     }
+    .div-header span {
+        font-size: .8rem;
+    }
 }
 
 
@@ -260,10 +373,21 @@ Responsive Part
     a.nav-link, li {
         font-size: 1em;
     }
+
 }
 
 
 @media only screen and (max-width: 419px) {
+    .col .custom-col p {
+        padding-right: 6px;
+    }
+    .col-sm {
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+    ul.nav-pills {
+        margin: 0 6px;
+    }
     a.nav-link, li{font-size: 1em;}
     h1.border-h1 {text-align: center;}
 }
