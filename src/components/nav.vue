@@ -12,7 +12,7 @@
 
                     <b-navbar-nav class="ml-auto">
                         <b-nav-item href="/">หน้าหลัก</b-nav-item>
-                        <b-nav-item href="">กำหนดการ</b-nav-item>
+                        <b-nav-item href="/schedule">กำหนดการ</b-nav-item>
                     </b-navbar-nav>
                     
                 </b-collapse>

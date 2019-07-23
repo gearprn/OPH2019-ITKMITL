@@ -9,48 +9,410 @@
             <div class="row">
                 <div class="col-lg-12 col-12">
                     <b-tabs 
-                     
-                    content-class="mt-3" 
+                    content-class="" 
                     fill
                     nav-link-class="text-warning"
                     active-nav-item-class="text-dark"
                     >
-                        <b-tab title="23 สิงหาคม 2562" active>
-                            <template slot="title" class="test">
-                                <span>23 สิงหาคม 2562</span>
+                        <b-tab title="23 สิงหาคม" active>
+                            <template slot="title">
+                                <span>23 สิงหาคม</span>
                             </template>
-                            <div class="div-header">
-                                <span><i class="far fa-calendar-alt"></i>&nbsp;กำหนดการวันศุกร์ที่ 23 สิงหาคม 2562</span>
-                            </div>
-                            <div class="row mt-0">
-                                <div class="col-lg-3 col-12 time">
-                                    <p class="mt-4">08.00 - 09.00 น.</p>
-                                </div>
-                                <div id="col" class="col-lg-9 col-12 text-left mb-0 even">
-                                    <h4 class="mt-3">ลงทะเบียนเข้าร่วมงานและการแข่งขันวิชาการ</h4>
-                                    <hr>
-                                    <p>ลงทะเบียนเข้าร่วมงานและการแข่งขันวิชาการ</p>
-                                    <p><strong>สถานที่ :</strong> จุดลงทะเบียน</p>
-                                </div>
-                            </div>
 
-                            <div class="row mt-0">
-                                <div class="col-lg-3 col-12 time">
-                                    <p class="mt-4">08.00 - 09.00 น.</p>
-                                </div>
-                                <div id="col" class="col-lg-9 col-12 text-left mb-0 odd">
-                                    <h4 class="mt-3">ลงทะเบียนเข้าร่วมงานและการแข่งขันวิชาการ</h4>
-                                    <hr>
-                                    <p>ลงทะเบียนเข้าร่วมงานและการแข่งขันวิชาการ</p>
-                                    <p><strong>สถานที่ :</strong> จุดลงทะเบียน</p>
-                                </div>
-                            </div>                        
+                            <div class="table-responsive scroll-hint is-scrollable" style="position: relative;overflow: auto;">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-left">กิจกรรม</th>
+                                            <th class="text-left">รายละเอียด</th>
+                                            <th class="text-left" style="width: 19%;">เวลา</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-left"> 
+                                                <p>ลงทะเบียน</p>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>เริ่มลงทะเบียนเข้าร่วมงานและการแข่งขันวิชาการ ของโรงเรียน นักเรียน และประชาชน ผู้สนใจทั่วไป</p>
+                                                <p><b>สถานที่</b> บริเวณจุดลงทะเบียน ณ อาคารคณะเทคโนโลยีสารสนเทศ</p>
+                                            </td>
+                                            <td class="text-left">08.00 – 09.00 น.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-left"> 
+                                                <p>การแข่งขันแก้ปัญหาด้านวิทยาการข้อมูล (Data science challenge)</p>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>การแข่งขันเพื่อส่งเสริมและสนับสนุนให้นักเรียนให้ความสนใจในการคิดเชิงตรรกะ การ คิดเชิงตัวเลข และการแก้ปัญหาเชิงวิทยาการข้อมูลด้วยการวิเคราะห์ได้อย่างเหมาะสม</p>
+                                                <p><b>สถานที่</b> ห้อง 205 ชั้น 2</p>
+                                            </td>
+                                            <td class="text-left">09.00 – 15.00 น.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-left"> 
+                                                <p>การแข่งขันกีฬาอิเล็คทรอนิกส์ (E – sports)</p>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>การแข่งขันเพื่อให้ผู้เข้าแข่งขันได้มีโอกาสแสดงความสามารถในกีฬาอิเล็คทรอนิกส์ (Esports) เป็นการฝีกการทำงานร่วมกันเป็นทีม และเพื่อสร้างแรงบันดาลใจให้ผู้เข้าชม อยากทำการพัฒนาและมีส่วนร่วมในการเล่นเกมให้เกิดประโยชน์</p>
+                                                <p><b>สถานที่</b> ห้อง 335 และ 328 ชั้น 3</p>
+                                            </td>
+                                            <td class="text-left">09.00 – 15.00 น.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-left"> 
+                                                <p>การแข่งขันด้านความปลอดภัยของระบบคอมพิวเตอร์ (Network security)</p>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>การแข่งขันเพื่อนักเรียนได้มีความรู้ ความสามารถ และรู้ทันภัยคุกคามในอินเทอร์เน็ต และในระบบคอมพิวเตอร์ อีกทั้งยังนำความรู้ไปใช้ให้เกิดประโยชน์ในด้านการป้องกัน ตนเองและผู้อื่นจากภัยคุกคามในอินเทอร์เน็ตและในระบบคอมพิวเตอร์ได้ </p>
+                                                <p><b>สถานที่</b> ห้อง 203 ชั้น 2</p>
+                                            </td>
+                                            <td class="text-left">09.00 – 15.00 น.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-left"> 
+                                                <p>นิทรรศการแสดงผลงานทางวิชาการ</p>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>นิทรรศการแสดงผลงานนักศึกษา และให้ความรู้ทางด้านเทคโนโลยีสารสนเทศ</p>
+                                                <p><b>สถานที่</b> โถง ชั้น 1</p>
+                                            </td>
+                                            <td class="text-left">09.00 – 16.00 น.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-left"> 
+                                                <p>กิจกรรมพบปะรุ่นพี่เตรียมความพร้อมสู่ ไอทีลาดกระบัง “ToBeIT@KMITL”</p>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>แนะนำเกี่ยวกับการเตรียมตัวสู่รั้วมหาวิทยาลัย และการเตรียมสอบเข้า คณะเทคโนโลยีสารสนเทศ ลาดกระบัง โดยรุ่นพี่นักศึกษาที่กำลังศึกษาอยู่</p>
+                                                <p><b>สถานที่</b> หน้าห้องประชุมใหญ่</p>
+                                            </td>
+                                            <td class="text-left">09.00 – 16.00 น.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-left"> 
+                                                <p>กิจกรรมจากชุมนุมนักศึกษา</p>
+                                            </td>
+                                            <td class="text-left">
+                                                <ul>
+                                                    <li>
+                                                        <p>ชุมนุมสันทนาการ (AGAPE) <b>สถานที่</b> ห้อง M16</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>ชุมนุม PHOTO (ถ่ายรูป) <b>สถานที่</b> ห้อง M17</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>ชุมนุม INFONIC (ดนตรี) <b>สถานที่</b> ทางขึ้นชั้นลอย</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>ชุมนุมอนิเมะและเกมกระดาน (เกม) <b>สถานที่</b> ห้อง M18</p>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                            <td class="text-left">09.00 – 16.00 น.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-left"> 
+                                                <p>กิจกรรมทดสอบทักษะการคิดเชิงคำนวณ (computational thinking skill) (รอบ 1)</p>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>ทดสอบทักษะวัดอนาคต.. กิจกรรมที่เปิดโอกาสให้น้องๆ ได้ทดลองทำแบบทดสอบจริง! ที่ใช้ในการแข่งขันการทดสอบระดับนานาชาติด้านทักษะการคิดเชิงคำนวณ หรือ BEBRAS THAILAND</p>
+                                                <p><b>สถานที่</b> ห้อง 304 ชั้น 3</p>
+                                            </td>
+                                            <td class="text-left">09.00 – 10.00 น.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-left"> 
+                                                <p>กิจกรรมเยี่ยมชมคณะฯ (รอบ 1)</p>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>เยี่ยมชม ห้องปฏิบัติการคอมพิวเตอร์ ห้องบรรยาย ห้อง Server, common room (ห้องสันทนาการ) ชุมนุมต่างๆ ของนักศึกษา ฯลฯ</p>
+                                                <p><b>สถานที่</b> หน้าห้องประชุมใหญ่</p>
+                                            </td>
+                                            <td class="text-left">09.30 – 10.00 น.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-left"> 
+                                                <p>เสวนาพิเศษ</p>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>เสวนาพิเศษ หัวข้อ “ปลดล๊อคทางความคิดอย่ายึดติดกับ IT แบบเดิมๆ”</p>
+                                                <p><b>สถานที่</b> ห้องประชุมใหญ่</p>
+                                            </td>
+                                            <td class="text-left">10.00 – 11.30 น.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-left"> 
+                                                <p>กิจกรรมเยี่ยมชมคณะฯ (รอบ 2)</p>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>เยี่ยมชม ห้องปฏิบัติการคอมพิวเตอร์ ห้องบรรยาย ห้อง Server, common room (ห้องสันทนาการ) ชุมนุมต่างๆ ของนักศึกษา ฯลฯ</p>
+                                                <p><b>สถานที่</b> หน้าห้องประชุมใหญ่</p>
+                                            </td>
+                                            <td class="text-left">11.30 – 12.00 น.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-left"> 
+                                                <p>กิจกรรม Workshop</p>
+                                            </td>
+                                            <td class="text-left">
+                                                <ul>
+                                                    <li>
+                                                        <p>“Joy Story - จินตนาการทะลุมิติ กับ Animation และ AR” <b>สถานที่</b> ห้อง M04</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>The Journey of Maqueen - ควบคุมหุ่นยนต์จิ๋วด้วยบล็อคโค้ด <b>สถานที่</b> ห้อง M22</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>“เชื่อมต่อทุกสิ่งด้วย IoT” <b>สถานที่</b> ห้อง M21</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>“Ez Data Science” <b>สถานที่</b> ห้อง M03</p>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                            <td class="text-left">13.30 – 14.30 น.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-left"> 
+                                                <p>กิจกรรม Workshop: “Build Your iOS App”</p>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>Workshop พิเศษ “Build your iOS App” การอบรมการเขียน App ด้วย iOS ที่จะพาน้องๆ ไปทดลองทำ application เพื่อใช้งานบนระบบปฏิบัติการ iOS ที่ใช้บน iPhone ด้วยตัวเอง พบกับการเรียนรู้ทั้งทฤษฏีและปฏิบัติ ที่จะทำให้น้องๆ ได้รู้และเข้าใจพื้นฐานการทำงานของส่วนประกอบของต่างๆ ของ application ในเบื้องต้นว่ามีอะไรบ้าง ทำงานร่วมกันได้อย่างไร</p>
+                                                <p><b>สถานที่</b> ห้อง 308 ชั้น 3</p>
+                                            </td>
+                                            <td class="text-left">13.30 – 14.30 น.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-left"> 
+                                                <p>กิจกรรมทดสอบทักษะการคิดเชิงคำนวณ (computational thinking skill) (รอบ 2)</p>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>ทดสอบทักษะวัดอนาคต.. กิจกรรมที่เปิดโอกาสให้น้องๆ ได้ทดลองทำแบบทดสอบจริง! ที่ใช้ในการแข่งขันการทดสอบระดับนานาชาติด้านทักษะการคิดเชิงคำนวณ หรือ BEBRAS THAILAND</p>
+                                                <p><b>สถานที่</b> ห้อง 304 ชั้น 3</p>
+                                            </td>
+                                            <td class="text-left">14.30 – 15.30 น.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-left"> 
+                                                <p>กิจกรรมเยี่ยมชมคณะฯ (รอบ 3)</p>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>เยี่ยมชม ห้องปฏิบัติการคอมพิวเตอร์ ห้องบรรยาย ห้อง Server, common room (ห้องสันทนาการ) ชุมนุมต่างๆ ของนักศึกษา ฯลฯ</p>
+                                                <p><b>สถานที่</b> หน้าห้องประชุมใหญ่</p>
+                                            </td>
+                                            <td class="text-left">15.00 – 15.30 น.</td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+            
+                            </div>
+                        
                         </b-tab>
 
-                        <b-tab title="24 สิงหาคม 2562">
-                            <div class="row text-left">
-                                
-                            </div>                       
+                        <b-tab title="24 สิงหาคม">
+                            <template slot="title">
+                                <span>24 สิงหาคม</span>
+                            </template>
+
+                            <div class="table-responsive scroll-hint is-scrollable" style="position: relative;overflow: auto;">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-left">กิจกรรม</th>
+                                            <th class="text-left">รายละเอียด</th>
+                                            <th class="text-left" style="width: 19%;">เวลา</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-left"> 
+                                                <p>ลงทะเบียน</p>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>เริ่มลงทะเบียนเข้าร่วมงานและการแข่งขันวิชาการ ของโรงเรียน นักเรียน และประชาชน ผู้สนใจทั่วไป</p>
+                                                <p><b>สถานที่</b> บริเวณจุดลงทะเบียน ณ อาคารคณะเทคโนโลยีสารสนเทศ</p>
+                                            </td>
+                                            <td class="text-left">08.00 – 09.00 น.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-left"> 
+                                                <p>นิทรรศการแสดงผลงานทางวิชาการ</p>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>นิทรรศการแสดงผลงานนักศึกษา และให้ความรู้ทางด้านเทคโนโลยีสารสนเทศ</p>
+                                                <p><b>สถานที่</b> โถง ชั้น 1</p>
+                                            </td>
+                                            <td class="text-left">09.00 – 16.00 น.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-left"> 
+                                                <p>กิจกรรมพบปะรุ่นพี่เตรียมความพร้อมสู่ ไอทีลาดกระบัง “ToBeIT@KMITL”</p>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>แนะนำเกี่ยวกับการเตรียมตัวสู่รั้วมหาวิทยาลัย และการเตรียมสอบเข้า คณะเทคโนโลยีสารสนเทศ ลาดกระบัง โดยรุ่นพี่นักศึกษาที่กำลังศึกษาอยู่</p>
+                                                <p><b>สถานที่</b> หน้าห้องประชุมใหญ่</p>
+                                            </td>
+                                            <td class="text-left">09.00 – 16.00 น.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-left"> 
+                                                <p>กิจกรรมจากชุมนุมนักศึกษา</p>
+                                            </td>
+                                            <td class="text-left">
+                                                <ul>
+                                                    <li>
+                                                        <p>ชุมนุมสันทนาการ (AGAPE) <b>สถานที่</b> ห้อง M16</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>ชุมนุม PHOTO (ถ่ายรูป) <b>สถานที่</b> ห้อง M17</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>ชุมนุม INFONIC (ดนตรี) <b>สถานที่</b> ทางขึ้นชั้นลอย</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>ชุมนุมอนิเมะและเกมกระดาน (เกม) <b>สถานที่</b> ห้อง M18</p>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                            <td class="text-left">09.00 – 16.00 น.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-left"> 
+                                                <p>กิจกรรม Workshop: “Build Your iOS App” (รอบ 1)</p>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>Workshop พิเศษ “Build your iOS App” การอบรมการเขียน App ด้วย iOS ที่จะพาน้องๆ ไปทดลองทำ application เพื่อใช้งานบนระบบปฏิบัติการ iOS ที่ใช้บน iPhone ด้วยตัวเอง พบกับการเรียนรู้ทั้งทฤษฏีและปฏิบัติ ที่จะทำให้น้องๆ ได้รู้และเข้าใจพื้นฐานการทำงานของส่วนประกอบของต่างๆ ของ application ในเบื้องต้นว่ามีอะไรบ้าง ทำงานร่วมกันได้อย่างไร</p>
+                                                <p><b>สถานที่</b> ห้อง 308 ชั้น 3</p>
+                                            </td>
+                                            <td class="text-left">09.30 – 10.30 น.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-left"> 
+                                                <p>กิจกรรม Workshop (รอบ 1)</p>
+                                            </td>
+                                            <td class="text-left">
+                                                <ul>
+                                                    <li>
+                                                        <p>“Joy Story - จินตนาการทะลุมิติ กับ Animation และ AR” <b>สถานที่</b> ห้อง M04</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>The Journey of Maqueen - ควบคุมหุ่นยนต์จิ๋วด้วยบล็อคโค้ด <b>สถานที่</b> ห้อง M22</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>“เชื่อมต่อทุกสิ่งด้วย IoT” <b>สถานที่</b> ห้อง M21</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>“Ez Data Science” <b>สถานที่</b> ห้อง M03</p>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                            <td class="text-left">09.30 – 10.30 น.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-left"> 
+                                                <p>เสวนาพิเศษ</p>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>เสวนาพิเศษ หัวข้อ “ปลดล๊อคทางความคิดอย่ายึดติดกับ IT แบบเดิมๆ”</p>
+                                                <p><b>สถานที่</b> ห้องประชุมใหญ่</p>
+                                            </td>
+                                            <td class="text-left">10.30 – 12.00 น.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-left"> 
+                                                <p>กิจกรรมเยี่ยมชมคณะฯ</p>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>เยี่ยมชม ห้องปฏิบัติการคอมพิวเตอร์ ห้องบรรยาย ห้อง Server, common room (ห้องสันทนาการ) ชุมนุมต่างๆ ของนักศึกษา ฯลฯ</p>
+                                                <p><b>สถานที่</b> หน้าห้องประชุมใหญ่</p>
+                                            </td>
+                                            <td class="text-left">13.00 – 16.00 น.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-left"> 
+                                                <p>กิจกรรม Workshop (รอบ 2)</p>
+                                            </td>
+                                            <td class="text-left">
+                                                <ul>
+                                                    <li>
+                                                        <p>“Joy Story - จินตนาการทะลุมิติ กับ Animation และ AR” <b>สถานที่</b> ห้อง M04</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>The Journey of Maqueen - ควบคุมหุ่นยนต์จิ๋วด้วยบล็อคโค้ด <b>สถานที่</b> ห้อง M22</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>“เชื่อมต่อทุกสิ่งด้วย IoT” <b>สถานที่</b> ห้อง M21</p>
+                                                    </li>
+                                                    <li>
+                                                        <p>“Ez Data Science” <b>สถานที่</b> ห้อง M03</p>
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                            <td class="text-left">13.30 – 14.30 น.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-left"> 
+                                                <p>กิจกรรม Workshop: “Build Your iOS App” (รอบ 2)</p>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>Workshop พิเศษ “Build your iOS App” การอบรมการเขียน App ด้วย iOS ที่จะพาน้องๆ ไปทดลองทำ application เพื่อใช้งานบนระบบปฏิบัติการ iOS ที่ใช้บน iPhone ด้วยตัวเอง พบกับการเรียนรู้ทั้งทฤษฏีและปฏิบัติ ที่จะทำให้น้องๆ ได้รู้และเข้าใจพื้นฐานการทำงานของส่วนประกอบของต่างๆ ของ application ในเบื้องต้นว่ามีอะไรบ้าง ทำงานร่วมกันได้อย่างไร</p>
+                                                <p><b>สถานที่</b> ห้อง 308 ชั้น 3</p>
+                                            </td>
+                                            <td class="text-left">13.30 – 14.30 น.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-left"> 
+                                                <p>กิจกรรมทดสอบทักษะการคิดเชิงคำนวณ (computational thinking skill)</p>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>ทดสอบทักษะวัดอนาคต.. กิจกรรมที่เปิดโอกาสให้น้องๆ ได้ทดลองทำแบบทดสอบจริง! ที่ใช้ในการแข่งขันการทดสอบระดับนานาชาติด้านทักษะการคิดเชิงคำนวณ หรือ BEBRAS THAILAND</p>
+                                                <p><b>สถานที่</b> ห้อง 304 ชั้น 3</p>
+                                            </td>
+                                            <td class="text-left">13.30 – 14.30 น.</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td class="text-left"> 
+                                                <p>การแข่งขันกีฬาอิเล็คทรอนิกส์ (E – sports)</p>
+                                            </td>
+                                            <td class="text-left">
+                                                <p>การแข่งขันกีฬาอิเล็คทรอนิกส์ (E – sports) รอบบุคคลทั่วไป</p>
+                                                <p><b>สถานที่</b> ห้อง 207 ชั้น 2</p>
+                                            </td>
+                                            <td class="text-left">10.00 – 15.00 น.</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+            
+                            </div>
+                        
                         </b-tab>
 
                     </b-tabs>
@@ -69,6 +431,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.table-responsive th {
+    background: #fdb127;
+    color: #FFF;
+}
+.table-responsive tbody tr:nth-child(2n-1) {
+    background: #fff4e0;
+}
 .nav-link {
     color: #050e17;
 }
@@ -91,7 +460,12 @@ export default {
     background-color: #fdb127;
 }
 
-
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
 /***-------------------------
 
     Style sheet of Open House
@@ -805,6 +1179,10 @@ responsive
     .modal-dialog {
         max-width: 60%; 
         margin: 1.75rem auto;
+    }
+    .table {
+        width: 155%;
+        max-width: 155%;
     }
 	a.btn {
 		height: 50px;
