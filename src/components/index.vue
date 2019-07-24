@@ -36,7 +36,7 @@
                         <p class="align-middle">ทดสอบทักษะวัดอนาคต.. กิจกรรมที่เปิดโอกาสให้น้องๆ ได้ทดลองทำแบบทดสอบจริง! ที่ใช้ในการแข่งขันการทดสอบระดับนานาชาติด้านทักษะการคิดเชิงคำนวณ หรือ BEBRAS THAILAND: International Challenge on Computational Thinking ในปีที่แล้ว โดยเป็นแนวข้อสอบรับเข้าคณะเทคโนโลยีสารสนเทศ สจล. ในงานเปิดบ้านคณะไอทีลาดกระบัง : IT Ladkrabang Open House  2019 วันที่ 23-24 สิงหาคม 2562 (ผู้เข้าร่วมจะได้รับประกาศนียบัตรในการเข้าร่วมกิจกรรม)</p>
                     </div>
                 </div>
-                <a href="https://www.bebrasthailand.org/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">อ่านลายละเอียด</a>
+                <a href="https://www.bebrasthailand.org/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">อ่านรายละเอียด</a>
             </div>
         </section>
 

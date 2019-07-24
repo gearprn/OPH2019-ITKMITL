@@ -61,7 +61,7 @@
 
             </div>
             <div class="row mb-2">
-                <div class="col-lg-6"><span class="text-muted">©2018 Faculty of Information Technology, KMITL</span></div>
+                <div class="col-lg-6"><span class="text-muted">©2019 Faculty of Information Technology, KMITL</span></div>
             </div>
         </div>
     </footer>

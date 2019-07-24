@@ -4,7 +4,7 @@
             <div class="container">
 
                 <b-navbar-brand href="/">
-                    <img class="navBrandImg" src="https://openhouse.it.kmitl.ac.th/2018/assets/img/logo-sym.svg">
+                    <img class="navBrandImg" src="https://edu.bstudio.click/openhouse-2018/assets/img/logo-sym.svg">
                 </b-navbar-brand>
 
                 <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>

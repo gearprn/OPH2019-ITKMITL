@@ -8,6 +8,8 @@ import InfoData from './views/infoData.vue'
 import InfoPhp from './views/infoPhp.vue'
 import schedule from './views/schedule.vue'
 
+import RegisNetSec from './views/regisNetsec.vue'
+
 Vue.use(Router)
 
 export default new Router({
@@ -43,6 +45,11 @@ export default new Router({
       path: '/schedule',
       name: 'schedule',
       component: schedule,
+    },
+    {
+      path: '/detailsNetSec/register',
+      name: 'register',
+      component: RegisNetSec,
     },
   ]
 })
