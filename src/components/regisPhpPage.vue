@@ -4,7 +4,7 @@
             <div class="col-lg-12">
                 <div class="content">
                     <h2>สมัครเข้าแข่งขัน</h2>
-                    <h4>รายละเอียดการแข่งขันความปลอดภัยของระบบคอมพิวเตอร์</h4>
+                    <h4>รายละเอียดการแข่งขันพัฒนาเว็บไซต์ด้วย PHP และ JavaScript</h4>
                     
                     <form v-on:submit.prevent="onSubmit" v-if="success">
                         
@@ -188,7 +188,7 @@ pdfMake.fonts = {
 }
 
 export default {
-    name: "regisnetsecPage",
+    name: "regisphpPage",
     data () {
         return {
             teamName: "",
@@ -231,7 +231,7 @@ export default {
                     "Content-Type": "application/json"
                 },
                 data: {
-                    "event": 'NetworkSecurity',
+                    "event": 'WebDev',
                     "teamName": this.teamName,
                     "school": this.school,
                     "member1": {
@@ -296,14 +296,14 @@ export default {
             var advisorName = this.advisorName;
             var dd = {
                 info: {
-                    title: 'ใบสมัครเข้าร่วมการเเข่งขันความปลอดภัยของระบบคอมพิวเตอร์'
+                    title: 'ใบสมัครเข้าร่วมการแข่งขันพัฒนาเว็บไซต์ด้วย PHP และ JavaScript'
                 },
                 content: [
                     {
                         text: [
                             'IT LADKRABANG OPEN HOUSE 2019\n',
                             'เปิดบ้านไอทีลาดกระบัง 2019\n',
-                            'ใบสมัครเข้าร่วมการเเข่งขันการแข่งขันความปลอดภัยของระบบคอมพิวเตอร์'
+                            'ใบสมัครเข้าร่วมการแข่งขันพัฒนาเว็บไซต์ด้วย PHP และ JavaScript'
                         ],
                         style: 'header',
                         alignment: 'center'
@@ -427,7 +427,7 @@ export default {
                     }
                 } 
             };
-            pdfMake.createPdf(dd).download('ใบสมัครเข้าร่วมการเเข่งขันความปลอดภัยของระบบคอมพิวเตอร์.pdf');
+            pdfMake.createPdf(dd).download('ใบสมัครเข้าร่วมการแข่งขันพัฒนาเว็บไซต์ด้วย PHP และ JavaScript.pdf');
         }
     },
     // mounted () {

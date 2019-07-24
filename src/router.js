@@ -9,6 +9,9 @@ import InfoPhp from './views/infoPhp.vue'
 import schedule from './views/schedule.vue'
 
 import RegisNetSec from './views/regisNetsec.vue'
+import RegisEsport from './views/regisEsport.vue'
+import RegisData from './views/regisData.vue'
+import RegisPhp from './views/regisPhp.vue'
 
 Vue.use(Router)
 
@@ -50,6 +53,21 @@ export default new Router({
       path: '/detailsNetSec/register',
       name: 'register',
       component: RegisNetSec,
+    },
+    {
+      path: '/detailsEsport/register',
+      name: 'register',
+      component: RegisEsport,
+    },
+    {
+      path: '/detailsData/register',
+      name: 'register',
+      component: RegisData,
+    },
+    {
+      path: '/detailsPhp/register',
+      name: 'register',
+      component: RegisPhp,
     },
   ]
 })

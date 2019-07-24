@@ -4,7 +4,7 @@
             <div class="col-lg-12">
                 <div class="content">
                     <h2>สมัครเข้าแข่งขัน</h2>
-                    <h4>รายละเอียดการแข่งขันความปลอดภัยของระบบคอมพิวเตอร์</h4>
+                    <h4>รายละเอียดการแข่งขันกีฬาอิเล็กทรอนิกส์ (E-Sport)</h4>
                     
                     <form v-on:submit.prevent="onSubmit" v-if="success">
                         
@@ -104,6 +104,166 @@
                         <div class="form-group">
                             <div class="row text-left">
                                 <div class="col-lg-12 col-sm-12 mt-3">
+                                    <h3>ข้อมูลสมาชิกคนที่ 3</h3>
+                                </div>
+                                <div class="col-lg-12 col-sm-12 pad">
+                                    <div class="row spacing">
+                                        <div class="col-lg-12 col-sm-12 mt-3">
+                                            <label class="control-label">ชื่อ-นามสกุล สมาชิกคนที่ 3 *</label>
+                                            <input type="text" class="form-control form-control-lg" required v-model="mem3name">
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 mt-3">
+                                            <label class="control-label">หมายเลขประจำตัวประชาชน *</label>
+                                            <input type="number" class="form-control form-control-lg" required v-model="mem3id">
+                                        </div>
+                                        <div class="col-lg-6 col-sm-12 mt-3">
+                                            <label class="control-label">อายุ *</label>
+                                            <input type="number" class="form-control form-control-lg" required v-model="mem3age">
+                                        </div>
+                                        <div class="col-lg-6 col-sm-12 mt-3">
+                                            <label class="control-label">ระดับชั้น *</label>
+                                            <select class="custom-select" required v-model="mem3grade">
+                                                <option value="4">มัธยมศึกษาปีที่ 4</option>
+                                                <option value="5">มัธยมศึกษาปีที่ 5</option>
+                                                <option value="6">มัธยมศึกษาปีที่ 6</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-12 mt-3">
+                                            <label class="control-label">เบอร์โทรศัพท์ *</label>
+                                            <input type="tel" class="form-control form-control-lg" required v-model="mem3tel">
+                                        </div>
+                                        <div class="col-lg-6 col-sm-12 mt-3">
+                                            <label class="control-label">อีเมล *</label>
+                                            <input type="email" class="form-control form-control-lg" required v-model="mem3email">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="row text-left">
+                                <div class="col-lg-12 col-sm-12 mt-3">
+                                    <h3>ข้อมูลสมาชิกคนที่ 4</h3>
+                                </div>
+                                <div class="col-lg-12 col-sm-12 pad">
+                                    <div class="row spacing">
+                                        <div class="col-lg-12 col-sm-12 mt-3">
+                                            <label class="control-label">ชื่อ-นามสกุล สมาชิกคนที่ 4 *</label>
+                                            <input type="text" class="form-control form-control-lg" required v-model="mem4name">
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 mt-3">
+                                            <label class="control-label">หมายเลขประจำตัวประชาชน *</label>
+                                            <input type="number" class="form-control form-control-lg" required v-model="mem4id">
+                                        </div>
+                                        <div class="col-lg-6 col-sm-12 mt-3">
+                                            <label class="control-label">อายุ *</label>
+                                            <input type="number" class="form-control form-control-lg" required v-model="mem4age">
+                                        </div>
+                                        <div class="col-lg-6 col-sm-12 mt-3">
+                                            <label class="control-label">ระดับชั้น *</label>
+                                            <select class="custom-select" required v-model="mem4grade">
+                                                <option value="4">มัธยมศึกษาปีที่ 4</option>
+                                                <option value="5">มัธยมศึกษาปีที่ 5</option>
+                                                <option value="6">มัธยมศึกษาปีที่ 6</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-12 mt-3">
+                                            <label class="control-label">เบอร์โทรศัพท์ *</label>
+                                            <input type="tel" class="form-control form-control-lg" required v-model="mem4tel">
+                                        </div>
+                                        <div class="col-lg-6 col-sm-12 mt-3">
+                                            <label class="control-label">อีเมล *</label>
+                                            <input type="email" class="form-control form-control-lg" required v-model="mem4email">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="row text-left">
+                                <div class="col-lg-12 col-sm-12 mt-3">
+                                    <h3>ข้อมูลสมาชิกคนที่ 5</h3>
+                                </div>
+                                <div class="col-lg-12 col-sm-12 pad">
+                                    <div class="row spacing">
+                                        <div class="col-lg-12 col-sm-12 mt-3">
+                                            <label class="control-label">ชื่อ-นามสกุล สมาชิกคนที่ 5 *</label>
+                                            <input type="text" class="form-control form-control-lg" required v-model="mem5name">
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 mt-3">
+                                            <label class="control-label">หมายเลขประจำตัวประชาชน *</label>
+                                            <input type="number" class="form-control form-control-lg" required v-model="mem5id">
+                                        </div>
+                                        <div class="col-lg-6 col-sm-12 mt-3">
+                                            <label class="control-label">อายุ *</label>
+                                            <input type="number" class="form-control form-control-lg" required v-model="mem5age">
+                                        </div>
+                                        <div class="col-lg-6 col-sm-12 mt-3">
+                                            <label class="control-label">ระดับชั้น *</label>
+                                            <select class="custom-select" required v-model="mem5grade">
+                                                <option value="4">มัธยมศึกษาปีที่ 4</option>
+                                                <option value="5">มัธยมศึกษาปีที่ 5</option>
+                                                <option value="6">มัธยมศึกษาปีที่ 6</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-12 mt-3">
+                                            <label class="control-label">เบอร์โทรศัพท์ *</label>
+                                            <input type="tel" class="form-control form-control-lg" required v-model="mem5tel">
+                                        </div>
+                                        <div class="col-lg-6 col-sm-12 mt-3">
+                                            <label class="control-label">อีเมล *</label>
+                                            <input type="email" class="form-control form-control-lg" required v-model="mem5email">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="row text-left">
+                                <div class="col-lg-12 col-sm-12 mt-3">
+                                    <h3>ข้อมูลสมาชิกคนที่ 6 (สำรอง)</h3>
+                                </div>
+                                <div class="col-lg-12 col-sm-12 pad">
+                                    <div class="row spacing">
+                                        <div class="col-lg-12 col-sm-12 mt-3">
+                                            <label class="control-label">ชื่อ-นามสกุล สมาชิกคนที่ 6 *</label>
+                                            <input type="text" class="form-control form-control-lg" required v-model="mem6name">
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 mt-3">
+                                            <label class="control-label">หมายเลขประจำตัวประชาชน *</label>
+                                            <input type="number" class="form-control form-control-lg" required v-model="mem6id">
+                                        </div>
+                                        <div class="col-lg-6 col-sm-12 mt-3">
+                                            <label class="control-label">อายุ *</label>
+                                            <input type="number" class="form-control form-control-lg" required v-model="mem6age">
+                                        </div>
+                                        <div class="col-lg-6 col-sm-12 mt-3">
+                                            <label class="control-label">ระดับชั้น *</label>
+                                            <select class="custom-select" required v-model="mem6grade">
+                                                <option value="4">มัธยมศึกษาปีที่ 4</option>
+                                                <option value="5">มัธยมศึกษาปีที่ 5</option>
+                                                <option value="6">มัธยมศึกษาปีที่ 6</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-12 mt-3">
+                                            <label class="control-label">เบอร์โทรศัพท์ *</label>
+                                            <input type="tel" class="form-control form-control-lg" required v-model="mem6tel">
+                                        </div>
+                                        <div class="col-lg-6 col-sm-12 mt-3">
+                                            <label class="control-label">อีเมล *</label>
+                                            <input type="email" class="form-control form-control-lg" required v-model="mem6email">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="row text-left">
+                                <div class="col-lg-12 col-sm-12 mt-3">
                                     <h3>ข้อมูลอาจารย์ที่ปรึกษา</h3>
                                 </div>
                                 <div class="col-lg-12 col-sm-12  pad">
@@ -188,7 +348,7 @@ pdfMake.fonts = {
 }
 
 export default {
-    name: "regisnetsecPage",
+    name: "regisesportPage",
     data () {
         return {
             teamName: "",
@@ -205,12 +365,30 @@ export default {
             mem2grade: "",
             mem2tel: "",
             mem2email: "",
-            mem3name: null,
-            mem3id: null,
-            mem3age: null,
-            mem3grade: null,
-            mem3tel: null,
-            mem3email: null,
+            mem3name: "",
+            mem3id: "",
+            mem3age: "",
+            mem3grade: "",
+            mem3tel: "",
+            mem3email: "",
+            mem4name: "",
+            mem4id: "",
+            mem4age: "",
+            mem4grade: "",
+            mem4tel: "",
+            mem4email: "",
+            mem5name: "",
+            mem5id: "",
+            mem5age: "",
+            mem5grade: "",
+            mem5tel: "",
+            mem5email: "",
+            mem6name: "",
+            mem6id: "",
+            mem6age: "",
+            mem6grade: "",
+            mem6tel: "",
+            mem6email: "",
             advisorName: "",
             advisorTel: "",
             advisorEmail: "",
@@ -226,12 +404,13 @@ export default {
         onSubmit() {
             axios({
                 method: "POST",
-                url: "https://us-central1-itkmitl-oph-2019.cloudfunctions.net/event/register",
+                url: "https://us-central1-itkmitl-oph-2019.cloudfunctions.net/event/esport",
                 headers: {
                     "Content-Type": "application/json"
                 },
                 data: {
-                    "event": 'NetworkSecurity',
+                    "event": 'Esport',
+                    "teamType": null,
                     "teamName": this.teamName,
                     "school": this.school,
                     "member1": {
@@ -257,6 +436,30 @@ export default {
                         "grade": this.mem3grade,
                         "tel": this.mem3tel,
                         "email": this.mem3email
+                    },
+                    "member4": {
+                        "name": this.mem4name,
+                        "id": this.mem4id,
+                        "age": this.mem4age,
+                        "grade": this.mem4grade,
+                        "tel": this.mem4tel,
+                        "email": this.mem4email
+                    },
+                    "member5": {
+                        "name": this.mem5name,
+                        "id": this.mem5id,
+                        "age": this.mem5age,
+                        "grade": this.mem5grade,
+                        "tel": this.mem5tel,
+                        "email": this.mem5email
+                    },
+                    "member6": {
+                        "name": this.mem6name,
+                        "id": this.mem6id,
+                        "age": this.mem6age,
+                        "grade": this.mem6grade,
+                        "tel": this.mem6tel,
+                        "email": this.mem6email
                     },
                     "advisorName": this.advisorName,
                     "advisorEmail": this.advisorEmail,
@@ -296,14 +499,14 @@ export default {
             var advisorName = this.advisorName;
             var dd = {
                 info: {
-                    title: 'ใบสมัครเข้าร่วมการเเข่งขันความปลอดภัยของระบบคอมพิวเตอร์'
+                    title: 'ใบสมัครเข้าร่วมการแข่งขันกีฬาอิเล็กทรอนิกส์ (E-Sport)'
                 },
                 content: [
                     {
                         text: [
                             'IT LADKRABANG OPEN HOUSE 2019\n',
                             'เปิดบ้านไอทีลาดกระบัง 2019\n',
-                            'ใบสมัครเข้าร่วมการเเข่งขันการแข่งขันความปลอดภัยของระบบคอมพิวเตอร์'
+                            'ใบสมัครเข้าร่วมการแข่งขันกีฬาอิเล็กทรอนิกส์ (E-Sport)'
                         ],
                         style: 'header',
                         alignment: 'center'
@@ -389,6 +592,94 @@ export default {
                     },
                     '\n',
                     {
+                        text: 'สมาชิกคนที่ 3',
+                        style: 'header',
+                    },
+                    {
+                        columns: [
+                            {
+                                text: 'ชื่อ - นามสกุล: ' +this.mem3name
+                            },
+                            {
+                                text: 'อีเมล: '+this.mem3email
+                            },
+                            {
+                                text: 'เบอร์โทรศัพท์: '+this.mem3tel
+                            },
+                            {
+                                text: 'ระดับชั้น: มัธยมศึกษาปีที่ '+this.mem3grade
+                            },
+                        ],
+                        fontSize: 16
+                    },
+                    '\n',
+                    {
+                        text: 'สมาชิกคนที่ 4',
+                        style: 'header',
+                    },
+                    {
+                        columns: [
+                            {
+                                text: 'ชื่อ - นามสกุล: ' +this.mem4name
+                            },
+                            {
+                                text: 'อีเมล: '+this.mem4email
+                            },
+                            {
+                                text: 'เบอร์โทรศัพท์: '+this.mem4tel
+                            },
+                            {
+                                text: 'ระดับชั้น: มัธยมศึกษาปีที่ '+this.mem4grade
+                            },
+                        ],
+                        fontSize: 16
+                    },
+                    '\n',
+                    {
+                        text: 'สมาชิกคนที่ 5',
+                        style: 'header',
+                    },
+                    {
+                        columns: [
+                            {
+                                text: 'ชื่อ - นามสกุล: ' +this.mem5name
+                            },
+                            {
+                                text: 'อีเมล: '+this.mem5email
+                            },
+                            {
+                                text: 'เบอร์โทรศัพท์: '+this.mem5tel
+                            },
+                            {
+                                text: 'ระดับชั้น: มัธยมศึกษาปีที่ '+this.mem5grade
+                            },
+                        ],
+                        fontSize: 16
+                    },
+                    '\n',
+                    {
+                        text: 'สมาชิกคนที่ 6 (สำรอง)',
+                        style: 'header',
+                    },
+                    {
+                        columns: [
+                            {
+                                text: 'ชื่อ - นามสกุล: ' +this.mem6name
+                            },
+                            {
+                                text: 'อีเมล: '+this.mem6email
+                            },
+                            {
+                                text: 'เบอร์โทรศัพท์: '+this.mem6tel
+                            },
+                            {
+                                text: 'ระดับชั้น: มัธยมศึกษาปีที่ '+this.mem6grade
+                            },
+                        ],
+                        fontSize: 16
+                    },
+                    '\n',
+                    {
                         text: '     โรงเรียน อาจารย์ที่ปรึกษา เเละ นักเรียนที่เข้าร่วมกิจกรรม ได้ทราบถึงหลักเกณฑ์ในการเเข่งขันครั้งนี้เเล้ว ยินดีปฎิบัติ\n',
                         fontSize: 16,
                         margin: [20, 0, 0, 0]
@@ -427,7 +718,7 @@ export default {
                     }
                 } 
             };
-            pdfMake.createPdf(dd).download('ใบสมัครเข้าร่วมการเเข่งขันความปลอดภัยของระบบคอมพิวเตอร์.pdf');
+            pdfMake.createPdf(dd).download('ใบสมัครเข้าร่วมการแข่งขันกีฬาอิเล็กทรอนิกส์ (E-Sport).pdf');
         }
     },
     // mounted () {

@@ -4,7 +4,7 @@
             <div class="col-lg-12">
                 <div class="content">
                     <h2>สมัครเข้าแข่งขัน</h2>
-                    <h4>รายละเอียดการแข่งขันความปลอดภัยของระบบคอมพิวเตอร์</h4>
+                    <h4>การแข่งขันแก้ปัญหาด้านวิทยาการข้อมูล (Data Science Challenge)</h4>
                     
                     <form v-on:submit.prevent="onSubmit" v-if="success">
                         
@@ -104,6 +104,46 @@
                         <div class="form-group">
                             <div class="row text-left">
                                 <div class="col-lg-12 col-sm-12 mt-3">
+                                    <h3>ข้อมูลสมาชิกคนที่ 3</h3>
+                                </div>
+                                <div class="col-lg-12 col-sm-12 pad">
+                                    <div class="row spacing">
+                                        <div class="col-lg-12 col-sm-12 mt-3">
+                                            <label class="control-label">ชื่อ-นามสกุล สมาชิกคนที่ 3 *</label>
+                                            <input type="text" class="form-control form-control-lg" required v-model="mem3name">
+                                        </div>
+                                        <div class="col-lg-12 col-sm-12 mt-3">
+                                            <label class="control-label">หมายเลขประจำตัวประชาชน *</label>
+                                            <input type="number" class="form-control form-control-lg" required v-model="mem3id">
+                                        </div>
+                                        <div class="col-lg-6 col-sm-12 mt-3">
+                                            <label class="control-label">อายุ *</label>
+                                            <input type="number" class="form-control form-control-lg" required v-model="mem3age">
+                                        </div>
+                                        <div class="col-lg-6 col-sm-12 mt-3">
+                                            <label class="control-label">ระดับชั้น *</label>
+                                            <select class="custom-select" required v-model="mem3grade">
+                                                <option value="4">มัธยมศึกษาปีที่ 4</option>
+                                                <option value="5">มัธยมศึกษาปีที่ 5</option>
+                                                <option value="6">มัธยมศึกษาปีที่ 6</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6 col-sm-12 mt-3">
+                                            <label class="control-label">เบอร์โทรศัพท์ *</label>
+                                            <input type="tel" class="form-control form-control-lg" required v-model="mem3tel">
+                                        </div>
+                                        <div class="col-lg-6 col-sm-12 mt-3">
+                                            <label class="control-label">อีเมล *</label>
+                                            <input type="email" class="form-control form-control-lg" required v-model="mem3email">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="row text-left">
+                                <div class="col-lg-12 col-sm-12 mt-3">
                                     <h3>ข้อมูลอาจารย์ที่ปรึกษา</h3>
                                 </div>
                                 <div class="col-lg-12 col-sm-12  pad">
@@ -188,7 +228,7 @@ pdfMake.fonts = {
 }
 
 export default {
-    name: "regisnetsecPage",
+    name: "regisdataPage",
     data () {
         return {
             teamName: "",
@@ -205,12 +245,12 @@ export default {
             mem2grade: "",
             mem2tel: "",
             mem2email: "",
-            mem3name: null,
-            mem3id: null,
-            mem3age: null,
-            mem3grade: null,
-            mem3tel: null,
-            mem3email: null,
+            mem3name: "",
+            mem3id: "",
+            mem3age: "",
+            mem3grade: "",
+            mem3tel: "",
+            mem3email: "",
             advisorName: "",
             advisorTel: "",
             advisorEmail: "",
@@ -231,7 +271,8 @@ export default {
                     "Content-Type": "application/json"
                 },
                 data: {
-                    "event": 'NetworkSecurity',
+                    "event": 'DataScience',
+                    "teamType": null,
                     "teamName": this.teamName,
                     "school": this.school,
                     "member1": {
@@ -296,14 +337,14 @@ export default {
             var advisorName = this.advisorName;
             var dd = {
                 info: {
-                    title: 'ใบสมัครเข้าร่วมการเเข่งขันความปลอดภัยของระบบคอมพิวเตอร์'
+                    title: 'ใบสมัครเข้าร่วมการแข่งขันแก้ปัญหาด้านวิทยาการข้อมูล (Data Science Challenge)'
                 },
                 content: [
                     {
                         text: [
                             'IT LADKRABANG OPEN HOUSE 2019\n',
                             'เปิดบ้านไอทีลาดกระบัง 2019\n',
-                            'ใบสมัครเข้าร่วมการเเข่งขันการแข่งขันความปลอดภัยของระบบคอมพิวเตอร์'
+                            'ใบสมัครเข้าร่วมการแข่งขันแก้ปัญหาด้านวิทยาการข้อมูล (Data Science Challenge)'
                         ],
                         style: 'header',
                         alignment: 'center'
@@ -389,6 +430,28 @@ export default {
                     },
                     '\n',
                     {
+                        text: 'สมาชิกคนที่ 3',
+                        style: 'header',
+                    },
+                    {
+                        columns: [
+                            {
+                                text: 'ชื่อ - นามสกุล: ' +this.mem3name
+                            },
+                            {
+                                text: 'อีเมล: '+this.mem3email
+                            },
+                            {
+                                text: 'เบอร์โทรศัพท์: '+this.mem3tel
+                            },
+                            {
+                                text: 'ระดับชั้น: มัธยมศึกษาปีที่ '+this.mem3grade
+                            },
+                        ],
+                        fontSize: 16
+                    },
+                    '\n',
+                    {
                         text: '     โรงเรียน อาจารย์ที่ปรึกษา เเละ นักเรียนที่เข้าร่วมกิจกรรม ได้ทราบถึงหลักเกณฑ์ในการเเข่งขันครั้งนี้เเล้ว ยินดีปฎิบัติ\n',
                         fontSize: 16,
                         margin: [20, 0, 0, 0]
@@ -427,7 +490,7 @@ export default {
                     }
                 } 
             };
-            pdfMake.createPdf(dd).download('ใบสมัครเข้าร่วมการเเข่งขันความปลอดภัยของระบบคอมพิวเตอร์.pdf');
+            pdfMake.createPdf(dd).download('ใบสมัครเข้าร่วมการแข่งขันแก้ปัญหาด้านวิทยาการข้อมูล (Data Science Challenge).pdf');
         }
     },
     // mounted () {
