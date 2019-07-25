@@ -11,8 +11,8 @@
                     <h2>23 - 24 สิงหาคม 2562</h2>
                     <h2>ตั้งแต่เวลา 9.00 เป็นต้นไป</h2>
                     <p>เปิดบ้านไอทีลาดกระบัง "IT LADKRABANG OPEN HOUSE 2019" กลับมาอีกครั้งกับการเปิดบ้านสร้างมุมมองใหม่ ค้นหาคำตอบในสิ่งที่ชอบ พร้อมด้วยการสร้างโอกาสในการเตรียมตัวสู่ไอทีลาดกระบัง มาพบคำตอบได้ในงานนี้ทั้งสาระและความสนุกจากกิจกรรมมากมาย จัดโดยคณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
-                    <a href="" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">กำหนดการ</a>
-                    <a href="https://oph2019-kmitl-c2dac.web.app/" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">ลงทะเบียนสำหรับผู้เข้าชมงาน</a>
+                    <router-link tag="a" to="/schedule" class="btn btn-primary btn-lg active" role="button" >กำหนดการ</router-link>
+                    <a href="https://oph2019-kmitl-c2dac.web.app/" class="btn btn-primary btn-lg active" role="button">ลงทะเบียนสำหรับผู้เข้าชมงาน</a>
                 </div>  
             </div>
         </section>
@@ -121,48 +121,44 @@
                     <div class="row">
 
                         <div class="col-lg-3 col-6 gridCard">
-                            <a href="" @click="infoNetSec()">
+                            <router-link tag="a" to="/detailsNetsec">
                                 <div class="competitionCard">
                                     <img src="https://edu.bstudio.click/openhouse-2018/assets/img/compet_security.svg">
                                     <h3 class="mt-2">การแข่งขันความปลอดภัยของระบบคอมพิวเตอร์</h3>
-                                    <h4 class="more-info">ดูรายละเอียด</h4>
-                                    <!-- <p>บททดสอบของการยืนหนึ่งทางด้านความปลอดภัยของระบบคอมพิวเตอร์ ใครที่คิดว่ารู้จริงด้านการป้องกันตนเองและผู้อื่น จากภัยคุกคามในอินเทอร์เน็ตและในระบบคอมพิวเตอร์ ...เราพร้อมให้มาพิสูจน์ความเป็นหนึ่ง</p> -->
+                                    <h4 class="more-info">สมัครการเเข่งขัน</h4>
                                 </div>
-                            </a>
+                            </router-link>
                         </div>
                         
                         <div class="col-lg-3 col-6 gridCard">
-                            <a href="" @click="infoEsport()">
+                            <router-link tag="a" to="/detailsEsport">
                                 <div class="competitionCard">
                                     <img src="https://edu.bstudio.click/openhouse-2018/assets/img/compet_game.svg">
                                     <h3 class="mt-2">การแข่งขันกีฬาอิเล็กทรอนิกส์ E-Sport</h3>
-                                    <h4 class="more-info">ดูรายละเอียด</h4>
-                                    <!-- <p>เซียนเกมไม่ควรพลาด สนามประลองความเป็นหนึ่งทางด้าน E-Sport กิจกรรมการแข่งขันกีฬาอิเล็กทรอนิกส์ที่สนับสนุนการเล่นเกมให้เกิดประโยชน์ พร้อมผลักดันให้เกิดการพัฒนาในวงการ E-Sport  ...เราพร้อมให้มาพิสูจน์ความเป็นหนึ่ง</p> -->
+                                    <h4 class="more-info">สมัครการเเข่งขัน</h4>
                                 </div>
-                            </a>
+                            </router-link>
                         </div>
                     
                         <div class="col-lg-3 col-6 gridCard">
-                            <a href="" @click="infoData()">
+                            <router-link tag="a" to="/detailsData">
                                 <div class="competitionCard">
                                     <img src="https://edu.bstudio.click/openhouse-2018/assets/img/compet_math.svg">
                                     <h3 class="mt-2">การแข่งขันแก้ปัญหาด้านวิทยาการข้อมูล </h3>
-                                    <h4 class="more-info">ดูรายละเอียด</h4>
-                                    <!-- <p>น้องๆ คนไหนที่คิดว่ามีความสามารถในการคิดเชิงตัวเลข คิดเชิงวิทยาการข้อมูล และชอบแก้ปัญหาด้วยการวิเคราะห์ข้อมูล เชิญทางนี้ ...เราพร้อมให้มาพิสูจน์ความเป็นหนึ่ง</p> -->
+                                    <h4 class="more-info">สมัครการเเข่งขัน</h4>
                                 </div>
-                            </a>
+                            </router-link>
                         </div> 
                     
                         
                         <div class="col-lg-3 col-6 gridCard">
-                            <a href="" @click="infoPHP()">
+                            <router-link tag="a" to="/detailsPhp">
                                 <div class="competitionCard">
                                     <img src="https://edu.bstudio.click/openhouse-2018/assets/img/compet_website.svg">
                                     <h3 class="mt-2">การแข่งขันพัฒนาเว็บไซต์ด้วย PHP และ JavaScript</h3>
-                                    <h4 class="more-info">ดูรายละเอียด</h4>
-                                    <!-- <p>เวทีแห่งผู้มีไอเดียสุดบันเจิดในการพัฒนาเว็บไซต์ ที่พร้อมด้วยทักษะการเขียนโปรแกรมด้วยภาษา PHP และ JavaScript ...เราพร้อมให้มาพิสูจน์ความเป็นหนึ่ง</p> -->
+                                    <h4 class="more-info">สมัครการเเข่งขัน</h4>
                                 </div>
-                            </a>
+                            </router-link>
                         </div>
                     
                     </div>

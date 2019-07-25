@@ -76,12 +76,17 @@
                     <li>รางวัลชนะเลิศ – ได้รับโล่และใบประกาศนียบัตร และทุนการศึกษา ทีมละ 4,000 บาท</li>
                     <li>รางวัลรองชนะเลิศ – ได้รับใบประกาศนียบัตร และทุนการศึกษา ทีมละ 2,000 บาท</li>
                     <li>รางวัลชมเชย – ได้รับใบประกาศนียบัตร</li>
-                    <li>รางวัลจากสปอนเซอร์</li>
+                    <li>รางวัลจากสปอนเซอร์ รางวัลจากบริษัท Secure D Center สนับสนุน Account Secplayground แพลตฟอร์มสำหรับเรียนรู้ทางด้าน Cyber security</li>
+                    <ul>
+                        <li>รางวัลชนะเลิศ account บนแพลตฟอร์ม Secplayground ระยะเวลา 1 ปี จำนวนทั้งสิ้น 2 รางวัล (มูลค่ากว่า 19,176‬ บาท)</li>
+                        <li>รางวัลรองชนะเลิศ account บนแพลตฟอร์ม Secplayground ระยะเวลา ครึ่งปี จำนวนทั้งสิ้น 2 รางวัล (มูลค่ากว่า 9,588‬ บาท)</li>
+                        <li>รางวัลชมเชย account บนแพลตฟอร์ม Secplayground ระยะเวลา 3 เดือน จำนวนทั้งสิ้น 2 รางวัล (มูลค่ากว่า 4,794 บาท )</li>
+                    </ul>
                 </ul>
             </div>
         </div>
 
-        <a href="" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" href="/detailsNetsec/register">สมัครการเเข่งขัน</a>
+        <router-link tag="a" to="/detailsNetSec/register" class="btn btn-primary btn-lg active mb-4" role="button">สมัครการเเข่งขัน</router-link>
     </div>
 </template>
 

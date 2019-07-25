@@ -89,7 +89,7 @@
             </div>
         </div>
 
-        <a href="" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" href="/detailsEsport/register">สมัครการเเข่งขัน</a>
+        <router-link tag="a" to="/detailsEsport/register" class="btn btn-primary btn-lg active mb-4" role="button">สมัครการเเข่งขัน</router-link>
     </div>
 </template>
 

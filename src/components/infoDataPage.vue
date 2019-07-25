@@ -3,7 +3,7 @@
         <h3><strong>กิจกรรมการแข่งขัน IT LADKRABANG OPENHOUSE 2019</strong></h3>
         <h4>คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</h4>
         <h4>วันศุกร์ที่ 23 สิงหาคม 2562</h4>
-        <h4>การแข่งขันแก้ปัญหาด้านวิทยาการข้อมูล (Data Science Challenge)</h4>
+        <h4>รายละเอียดการแข่งขันแก้ปัญหาด้านวิทยาการข้อมูล (Data Science Challenge)</h4>
         <div class="row mt-5">
             <div class="col-12 text-left">
                 <h4>วัตถุประสงค์</h4>
@@ -108,8 +108,7 @@
                 </ul>
             </div>
         </div>
-
-        <a href="" class="btn btn-primary btn-lg active" role="button" aria-pressed="true" href="/detailsData/register">สมัครการเเข่งขัน</a>
+        <router-link tag="a" to="/detailsData/register" class="btn btn-primary btn-lg active mb-4" role="button">สมัครการเเข่งขัน</router-link>
     </div>
 </template>
 

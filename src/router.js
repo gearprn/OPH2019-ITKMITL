@@ -51,23 +51,26 @@ export default new Router({
     },
     {
       path: '/detailsNetSec/register',
-      name: 'register',
+      name: 'netsecregister',
       component: RegisNetSec,
     },
     {
       path: '/detailsEsport/register',
-      name: 'register',
+      name: 'esportregister',
       component: RegisEsport,
     },
     {
       path: '/detailsData/register',
-      name: 'register',
+      name: 'dataregister',
       component: RegisData,
     },
     {
       path: '/detailsPhp/register',
-      name: 'register',
+      name: 'phpregister',
       component: RegisPhp,
     },
-  ]
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    return { x: 0, y: 0 }
+  }
 })

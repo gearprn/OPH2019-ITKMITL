@@ -69,6 +69,7 @@ event.post('/esport', async (request, response) => {
             member1: {
                 name: request.body.member1.name,
                 id: request.body.member1.id,
+                gameId: request.body.member1.gameId,
                 age: request.body.member1.age,
                 grade: request.body.member1.grade,
                 tel: request.body.member1.tel,
@@ -77,6 +78,7 @@ event.post('/esport', async (request, response) => {
             member2: {
                 name: request.body.member2.name,
                 id: request.body.member2.id,
+                gameId: request.body.member2.gameId,
                 age: request.body.member2.age,
                 grade: request.body.member2.grade,
                 tel: request.body.member2.tel,
@@ -85,6 +87,7 @@ event.post('/esport', async (request, response) => {
             member3: {
                 name: request.body.member3.name,
                 id: request.body.member3.id,
+                gameId: request.body.member3.gameId,
                 age: request.body.member3.age,
                 grade: request.body.member3.grade,
                 tel: request.body.member3.tel,
@@ -93,6 +96,7 @@ event.post('/esport', async (request, response) => {
             member4: {
                 name: request.body.member4.name,
                 id: request.body.member4.id,
+                gameId: request.body.member4.gameId,
                 age: request.body.member4.age,
                 grade: request.body.member4.grade,
                 tel: request.body.member4.tel,
@@ -101,6 +105,7 @@ event.post('/esport', async (request, response) => {
             member5: {
                 name: request.body.member5.name,
                 id: request.body.member5.id,
+                gameId: request.body.member5.gameId,
                 age: request.body.member5.age,
                 grade: request.body.member5.grade,
                 tel: request.body.member5.tel,
@@ -109,6 +114,7 @@ event.post('/esport', async (request, response) => {
             member6: {
                 name: request.body.member6.name,
                 id: request.body.member6.id,
+                gameId: request.body.member6.gameId,
                 age: request.body.member6.age,
                 grade: request.body.member6.grade,
                 tel: request.body.member6.tel,

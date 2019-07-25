@@ -11,8 +11,8 @@
                 <b-collapse id="nav-collapse" is-nav>
 
                     <b-navbar-nav class="ml-auto">
-                        <b-nav-item href="/">หน้าหลัก</b-nav-item>
-                        <b-nav-item href="/schedule">กำหนดการ</b-nav-item>
+                        <b-nav-item > <router-link tag="a" to="/"> หน้าหลัก </router-link> </b-nav-item>
+                        <b-nav-item > <router-link tag="a" to="/schedule"> กำหนดการ </router-link> </b-nav-item>
                     </b-navbar-nav>
                     
                 </b-collapse>
@@ -40,6 +40,14 @@ export default {
 </script>
 
 <style scoped lang="scss">
+a {
+    text-decoration: none;
+    color: #777;
+}
+a:hover {
+    color: inherit; text-decoration: none;
+}
+
 .navbar {
   background: #FFF;
 }
