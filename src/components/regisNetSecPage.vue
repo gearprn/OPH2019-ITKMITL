@@ -166,7 +166,7 @@
 
 <script>
 import axios from 'axios'
-var pdfMake = require('pdfmake/build/pdfmake.js');
+var pdfMake = require('pdfmake/build/pdfmake.min.js');
 var pdfFonts = require('pdfmake/build/vfs_fonts.js');
 pdfMake.vfs = pdfFonts.pdfMake.vfs;
 
@@ -264,8 +264,8 @@ export default {
                 }
             })
             .then((res) => {
-                // console.log(res.data)
-                // console.log('pass')
+                console.log(res.data)
+                console.log('pass')
                 this.statusCode = res.data.statusCode
                 this.statusMsg = res.data.statusMessage
                 if (this.statusCode == "201" && this.statusMsg == "Created") {
@@ -278,22 +278,11 @@ export default {
                 }
             })
             .catch((err) => {
-                // console.log(err)
-                // console.log('not pass')
-                this.statusCode = err.data.statusCode
-                this.statusMsg = err.data.statusMessage
-                if (this.statusCode == "201" && this.statusMsg == "Created") {
-                    this.success = false
-                    this.pdf()
-                }
-                if (err.data.statusCode == 400) {
-                    this.showModal = true
-                    this.modalmsg = "ชื่อทีมซ้ำกรุณาใช้ชื่อทีมอื่น"
-                }
+                console.log(err)
+                console.log('not pass')
             })
         },
         pdf() {
-            var advisorName = this.advisorName;
             var dd = {
                 info: {
                     title: 'ใบสมัครเข้าร่วมการเเข่งขันความปลอดภัยของระบบคอมพิวเตอร์'
