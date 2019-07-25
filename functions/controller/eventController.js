@@ -52,7 +52,7 @@ event.post('/register', async (request, response) => {
                 response.send(statusCode[201]);
             } else {
                 response.send(statusCode[400]);
-            };
+            }
         }
     } catch (e) {
         console.log(e);
@@ -131,7 +131,7 @@ event.post('/esport', async (request, response) => {
                 response.send(statusCode[201]);
             } else {
                 response.send(statusCode[400]);
-            };
+            }
         }
 
     } catch (e) {
@@ -162,7 +162,7 @@ event.get('/getEvent', async (request, response) => {
     try {
         let event = request.headers.event;
         let teamRef = firestore.collection(event);
-        teamArray = []
+        teamArray = [];
         let allTeam = await teamRef.get()
           .then(snapshot => {
             snapshot.forEach(doc => {
