@@ -26,9 +26,21 @@ export default {
 </script>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css?family=Kanit|Mitr&display=swap');
+@font-face {
+  font-family: 'IBMPlexThai';
+  src:  url('assets/fonts/IBMPlexThai-Bold.woff2') format('woff2'),
+        url('assets/fonts/IBMPlexThai-ExtraLight.woff2') format('woff2'),
+        url('assets/fonts/IBMPlexThai-Light.woff2') format('woff2'),
+        url('assets/fonts/IBMPlexThai-Medium.woff2') format('woff2'),
+        url('assets/fonts/IBMPlexThai-Regular.woff2') format('woff2'),
+        url('assets/fonts/IBMPlexThai-SemiBold.woff2') format('woff2'),
+        url('assets/fonts/IBMPlexThai-Text.woff2') format('woff2'),
+        url('assets/fonts/IBMPlexThai-Thin.woff2') format('woff2');
+}
+
+
 #app {
-  font-family: 'Mitr',sans-serif;
+  font-family: 'IBMPlexThai',sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
