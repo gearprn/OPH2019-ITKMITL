@@ -38,13 +38,16 @@ export default {
         url('assets/fonts/IBMPlexThai-Thin.woff2') format('woff2');
 }
 
-
+html {
+  scroll-behavior: smooth;
+}
 #app {
   font-family: 'IBMPlexThai',sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  scroll-behavior: smooth;
 }
 #nav {
   padding: 30px;

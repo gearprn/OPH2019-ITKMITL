@@ -41,7 +41,7 @@
                         <li>รอบที่ 1 (09.00 – 11.00 น.)</li>
                         <ul>
                             <li><p class="description mt-0 mb-0">ส่วนที่ 1 : การคิดแบบเบย์อย่างง่าย (Naïve Bayesian) ตามทฤษฎีความน่าจะเป็นของเบย์(Bayes’ Theorem) การวิเคราะห์จำแนกข้อมูล (Classification) โดยใช้เทคนิคการสร้างต้นไม้ตัดสินใจ (Decision Tree) การหาค่าที่เหมาะสมที่สุด (Optimization) และการวิเคราะห์การถดถอยเชิงเส้นอย่างง่าย (Simple Linear Regression Analysis)</p></li>
-                            <li><p class="description mt-0 mb-2">ส่วนที่ 2 : ความเข้าใจในโมเดลของทฤษฎีการเรียนรู้ของเครื่องจักร (Machine Learning)</p></li>
+                            <li><p class="description mt-0 mb-2">ส่วนที่ 2 : ความเข้าใจในโมเดลของทฤษฎีการเรียนรู้ของเครื่องจักร (Machine Learning) <span><a href="https://joo.gl/LiAH" target="_newblank"> ตัวอย่างเเบบทดสอบ</a></span></p></li>
                         </ul>
                         <li>รอบที่ 2 (12.00 – 14.00 น.) : แก้ปัญหาและวิเคราะห์เพื่อจำแนกข้อมูล (Classification)โดยใช้ทฤษฎีการเรียนรู้ของเครื่องจักร (Machine Learning)</li>
                     </ul>
@@ -140,10 +140,9 @@ p {font-weight: 300;}
 // body {font-family: 'Mitr', sans-serif;}
 // h1, h2{font-family: 'Kanit', sans-serif;}
 h1 {font-size: 2.4em;}
-a {color: #FFF;}
 p {font-size: 1.25em;}
 a {text-decoration: none;}
-a:hover {color: inherit; text-decoration: none;}
+a:hover {text-decoration: none;}
 
 /*--------------------
 button

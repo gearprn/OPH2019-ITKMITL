@@ -177,28 +177,30 @@
                 <div class="row">
                     <div class="col-lg-6 col-sm-12 gridCard mt-4">
                         <div class="workshopCard">
-                            <div class="row">
+                            <div class="row" @click="infoJoyStory()" style="cursor:pointer;">
                                 <div class="col-4 logo">
-                                    <img src="https://edu.bstudio.click/openhouse-2018/assets/img/workshop_multi.svg">
+                                    <img src="@/assets/WORKSHOP_Joy Story.png">
                                 </div>
                                 <div class="col-8 info text-center">
                                     <h3>Joy Story จินตนาการทะลุมิติ กับ Animation และ AR</h3>
                                     <!-- <p><strong>Multimedia</strong> -->
                                     <p>สนุกกับการปลดปล่อยจินตนาการเสมือนจริง</p>
+                                    <p class="more-info">ดูรายละเอียด</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-sm-12 gridCard mt-4">
                         <div class="workshopCard">
-                            <div class="row">
+                            <div class="row" @click="infoIoT()" style="cursor:pointer;">
                                 <div class="col-4 logo ">
-                                    <img src="https://edu.bstudio.click/openhouse-2018/assets/img/workshop_networks.svg">
+                                    <img src="@/assets/WORKSHOP_IoT.png">
                                 </div>
                                 <div class="col-8 info text-center">
                                     <h3>เชื่อมต่อทุกสิ่งด้วย IoT</h3>
                                     <!-- <p><strong>Networks: IoT Connecting Things</strong> -->
                                     <p>ถ้าทุกสิ่งเชื่อมต่อกับ Internet ได้จะเป็นเช่นไร?</p>
+                                    <p class="more-info">ดูรายละเอียด</p>
                                 </div>
                             </div>
                         </div>
@@ -208,28 +210,30 @@
                 <div class="row">
                     <div class="col-lg-6 col-sm-12 gridCard mt-4">
                         <div class="workshopCard">
-                            <div class="row">
+                            <div class="row" @click="infoRobot()" style="cursor:pointer;">
                                 <div class="col-4 logo ">
-                                    <img src="https://edu.bstudio.click/openhouse-2018/assets/img/workshop_se.svg">
+                                    <img src="@/assets/WORKSHOP_Robot.png">
                                 </div>
                                 <div class="col-8 info text-center">
                                     <h3>What can a robot do?</h3>
                                     <!-- <p><strong>ควบคุมหุ่นยนต์จิ๋วด้วยบล็อคโค้ด</strong> -->
                                     <p>ของเล่นสุดล้ำ สั่งการหุ่นจิ๋วด้วยตัวเอง</p>
+                                    <p class="more-info">ดูรายละเอียด</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-lg-6 col-sm-12 gridCard mt-4">
                         <div class="workshopCard">
-                            <div class="row">
+                            <div class="row" @click="infoWorkshopData()" style="cursor:pointer;">
                                 <div class="col-4 logo ">
-                                    <img src="https://edu.bstudio.click/openhouse-2018/assets/img/workshop_datascience.svg">
+                                    <img src="@/assets/WORKSHOP_EZ Data Science.png">
                                 </div>
                                 <div class="col-8 info text-center">
                                     <h3>Ez Data Science</h3>
                                     <!-- <p><strong>วิทยาการข้อมูลกำหนดอนาคต</strong> -->
                                     <p>วิทยาการข้อมูลกำหนดอนาคต</p>
+                                    <p class="more-info">ดูรายละเอียด</p>
                                 </div>
                             </div>
                         </div>
@@ -237,22 +241,23 @@
                 </div>
 
                 <div class="row mb-3">
-                    <div class="col-lg-3 col-sm-12 gridCard mt-4"></div>
                     <div class="col-lg-6 col-sm-12 gridCard mt-4">
                         <div class="workshopCard">
-                            <div class="row">
-                                <div class="col-4">
-                                    <img class="logoWorkshop" src="@/assets/online-order (2).png">
+                            <div class="row" @click="infoIOS()" style="cursor:pointer;">
+                                <div class="col-4 logo">
+                                    <img src="@/assets/WORKSHOP_IOS App.jpg">
                                 </div>
                                 <div class="col-8 info text-center">
                                     <h3>Build your iOS App</h3>
                                     <!-- <p><strong>คงดีถ้ามีแอพเป็นของตัวเอง </strong> -->
                                     <p>คงดีถ้ามีแอพเป็นของตัวเอง</p>
+                                    <p class="more-info">ดูรายละเอียด</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
 
@@ -510,10 +515,11 @@
                                 <div class="modal-body">
                                     <div class="row">
                                         <div class="col-lg-6 col-sm-12 text-center line-right">
-                                            <small>สถานที่: </small>
-                                            <p>หน้าห้องประชุมใหญ่ (Auditorium)</p>
-                                            <small>วันที่ 23-24 สิงหาคม 2561</small>
-                                            <p>เวลา 09.00 – 16.00 น.</p>
+                                            <h5>สถานที่: </h5>
+                                            <p>{{ place }}</p>
+                                            <h5 class="mb-3">{{ date }}</h5>
+                                            <p style="font-size: 1em;" class="mb-0">{{ time1 }}</p>
+                                            <p style="font-size: 1em;">{{ time2 }}</p>
                                         </div>
                                         <div class="col-lg-6 col-sm-12 text-left">
                                             <p>{{ modalmsg }}</p>
@@ -521,13 +527,6 @@
                                     </div>
                                 </div>
 
-                                <!-- <div v-if="this.isSubmit == true" class="modal-footer">
-                                    <a id="" @click="yes()" class="btn btn-primary mt-2">ใช่</a>
-                                    <a id="" @click="no()" class="btn btn-primary mt-2">ไม่ใช่ฉัน</a>
-                                </div>
-                                <div v-if="this.isSubmitIsNo == true" class="modal-footer">
-                                    <a id="" @click="register()" class="btn btn-primary mt-2">ลงทะเบียน</a>
-                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -564,7 +563,11 @@ export default {
             modalmsg: "",
             showModal: false,
             modalTopic: "",
-            subTopic: ""
+            subTopic: "",
+            place: "",
+            date: "",
+            time1: "",
+            time2: ""
         }
     },
     methods: {
@@ -577,25 +580,91 @@ export default {
         infoToBe() {
             this.modalTopic = "To Be IT@KMIT"
             this.subTopic = "เตรียมความพร้อมสู่ไอทีลาดกระบัง"
+            this.place = "หน้าห้องประชุมใหญ่ (Auditorium)"
+            this.date = "วันที่ 23-24 สิงหาคม 2561"
+            this.time1 = "เวลา 09.00 – 16.00 น."
+            this.time2 = ""
             this.modalmsg = "เตรียมความพร้อมสู่ไอทีลาดกระบังไปกับ “ToBeIT@KMITL” โดยเหล่าพี่ๆ ที่จะคอยแนะแนวน้องๆ พร้อมกับไขข้อข้องใจที่มีเพื่อการเตรียมสอบเข้าคณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง"
             this.showModal = true
         },
         infoTour() {
             this.modalTopic = "ทัวร์คณะ"
             this.subTopic = "เยี่ยมชมคณะไอทีลาดกระบัง"
+            this.place = "หน้าห้องประชุมใหญ่ (Auditorium)"
+            this.date = "วันที่ 23-24 สิงหาคม 2561"
+            this.time1 = "เวลา 09.00 – 16.00 น."
+            this.time2 = ""
             this.modalmsg = "เปิดประสบการณ์ภายในคณะไอทีลาดกระบัง กับการเยี่ยมชมห้องแลปสุดทันสมัย, ห้องเซิร์ฟเวอร์ภายในคณะ, ชุมนุมของนักศึกษาที่น่าสนใจ และสิ่งอำนวยความสะดวกต่างๆสุดครบครัน สัมผัสบรรยากาศจริงของการเรียนสุดเป็นกันเองโดยพี่ๆและอาจารย์"
             this.showModal = true
         },
         infoSyllabus() {
             this.modalTopic = "แนะนำหลักสูตรไอทีลาดกระบัง"
             this.subTopic = "เรียนไอทีลาดกระบังเป็นยังไง"
+            this.place = "หน้าห้องประชุมใหญ่ (Auditorium)"
+            this.date = "วันที่ 23-24 สิงหาคม 2561"
+            this.time1 = "เวลา 09.00 – 16.00 น."
+            this.time2 = ""
             this.modalmsg = "มาพูดคุยกับพี่ๆ นักศึกษาของคณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง ไขปัญหาข้อข้องใจไปด้วยกัน ความข้องใจในสาขาวิชาวิทยาการคอมพิวเตอร์, วิศวกรรมคอมพิวเตอร์, วิศวกรรมสารสนเทศ และ เทคโนโลยีสารสนเทศ ต่างกันยังไงและสาขาภายในคณะ เช่น IT, DSBA, BIT คืออะไร ต่างกันยังไง"
             this.showModal = true
         },
         infoExhibition() {
             this.modalTopic = "การแสดงนิทรรศการทางวิชาการ"
             this.subTopic = "ผลงานนักศึกษาและคณาจารย์"
+            this.place = "หน้าห้องประชุมใหญ่ (Auditorium)"
+            this.date = "วันที่ 23-24 สิงหาคม 2561"
+            this.time1 = "เวลา 09.00 – 16.00 น."
+            this.time2 = ""
             this.modalmsg = "การจัดแสดงผลงานให้แก่ผู้ที่สนใจได้ชมและศึกษา โดยนำเสนอผลงานต่างๆ ของนักศึกษาระดับปริญญาตรี, ปริญญาโท และ ปริญญาเอก รวมทั้งงานวิจัยของอาจารย์ในคณะฯ ทุกท่านจะได้รับทั้งความรู้ในเชิงวิชาการจากทั้งจากผลงานของนักศึกษา, งานวิจัยภายในคณะ"
+            this.showModal = true
+        },
+        infoJoyStory() {
+            this.modalTopic = "Joy Story จินตนาการทะลุมิติ กับ Animation และ AR"
+            this.subTopic = "สนุกกับการปลดปล่อยจินตนาการเสมือนจริง"
+            this.place = "ห้อง M04"
+            this.date = "วันที่ 23-24 สิงหาคม 2561"
+            this.time1 = "วันที่ 23 เวลา 13.30 – 14.30 น."
+            this.time2 = "วันที่ 24 เวลา 09.30 – 10.30 น. เเละ 13.30 – 14.30 น."
+            this.modalmsg = "กับ workshop ทางด้านสื่อประสม (Multimedia) ที่เปิดโอกาสให้น้องๆ ได้เรียนรู้และทดลองสร้าง 3D model พร้อมออกแบบสี ลักษณะพื้นผิว และการเคลื่อนไหวด้วยตัวเอง เพื่อนำไปใช้งานกับเทคโนโลยี AR (Augmented Reality) ด้วยการเขียนโปรแกรมควบคุมการเคลื่อนไหวของตัวละครผ่านเครื่องมือพื้นฐานที่สามารถนำไปต่อยอดได้ด้วยตัวเอง"
+            this.showModal = true
+        },
+        infoIoT() {
+            this.modalTopic = "เชื่อมต่อทุกสิ่งด้วย IoT"
+            this.subTopic = "ถ้าทุกสิ่งเชื่อมต่อกับ Internet ได้จะเป็นเช่นไร?"
+            this.place = "ห้อง M21"
+            this.date = "วันที่ 23-24 สิงหาคม 2561"
+            this.time1 = "วันที่ 23 เวลา 13.30 – 14.30 น."
+            this.time2 = "วันที่ 24 เวลา 09.30 – 10.30 น. เเละ 13.30 – 14.30 น."
+            this.modalmsg = "workshop ทางด้านเครือข่าย (Networks) เปิดโอกาสให้น้องๆ เรียนรู้กับเทคโนโลยีสุดชิคในตอนนี้อย่าง IoT (Internet of Things) โดยให้น้องๆ จะได้ลองเชื่อมต่อสิ่งต่างๆ เข้ากับ Internet ผ่านระบบคลาวด์ (Cloud) ที่สามารถตรวจสอบหรือแจ้งเตือน ผ่านเครื่องคอมพิวเตอร์ มือถือ หรือแทปเล็ตได้ทุกที่ผ่านทาง Internet ซึ่งจะทำให้น้องๆ เข้าใจพื้นฐานการทำงานของของเทคโนโลยี IoT พบเห็นได้ในปัจจุบัน เช่น Smart home, Smart farm, Healthcare monitoring เป็นต้น"
+            this.showModal = true
+        },
+        infoRobot() {
+            this.modalTopic = "What can a robot do? ควบคุมหุ่นยนต์จิ๋วด้วยบล็อคโค้ด"
+            this.subTopic = "ของเล่นสุดล้ำ สั่งการหุ่นจิ๋วด้วยตัวเอง"
+            this.place = "ห้อง M22"
+            this.date = "วันที่ 23-24 สิงหาคม 2561"
+            this.time1 = "วันที่ 23 เวลา 13.30 – 14.30 น."
+            this.time2 = "วันที่ 24 เวลา 09.30 – 10.30 น. เเละ 13.30 – 14.30 น."
+            this.modalmsg = "workshop ทางด้านวิศวกรรมซอฟต์แวร์ (Software Engineering) ที่ท้าทายความสามารถของน้องๆ ในการควบคุมหุ่นจิ๋ว ผ่านการเขียนโปรแกรมควบคุมหุ่นยนต์ด้วยบล็อคโค้ด และพบกับลูกเล่นมากมายที่มากมายที่มาพร้อมกับหุ่น Micro รุ่น Maqueen อาทิ เซ็นเซอร์อัลตราโซนิค เซ็นเซอร์เคลื่อนที่ตามเส้น การรับข้อมูลจากสภาพแวดล้อม และอีกมากมาย"
+            this.showModal = true
+        },
+        infoWorkshopData() {
+            this.modalTopic = "Ez Data Science"
+            this.subTopic = "วิทยาการข้อมูลกำหนดอนาคต"
+            this.place = "ห้อง M03"
+            this.date = "วันที่ 23-24 สิงหาคม 2561"
+            this.time1 = "วันที่ 23 เวลา 13.30 – 14.30 น."
+            this.time2 = "วันที่ 24 เวลา 09.30 – 10.30 น. เเละ 13.30 – 14.30 น."
+            this.modalmsg = "workshop ทางด้านวิทยาการข้อมูล (Data Science) ถือเป็นสาขาวิชาที่มาแรงสุดๆ ในขณะนี้ สัมผัสกับ workshop ที่จะปลุกความเป็นนักวิทยาการข้อมูลในตัวเองขึ้นมา กับการถ่ายกระบวนการในการจัดการกับข้อมูลจำนวนมากที่อยู่รอบตัว ด้วยการรวบรวม สร้าง และวิเคราะห์ข้อมูล จนไปถึงเรียนรู้วิธีการพยากรณ์สิ่งต่างๆ จากข้อมูล สัมผัสกับสิ่งเหล่านี้ พร้อมไขข้อสงสัย วิทยาการข้อมูลสำคัญอย่างไร..ทำไมองค์กรธุรกิจถึงต้องการตัว"
+            this.showModal = true
+        },
+        infoIOS() {
+            this.modalTopic = "Build your iOS App"
+            this.subTopic = "คงดีถ้ามีแอพเป็นของตัวเอง"
+            this.place = "ห้อง M308 ชั้น 3"
+            this.date = "วันที่ 23-24 สิงหาคม 2561"
+            this.time1 = "วันที่ 23 เวลา 13.30 – 14.30 น."
+            this.time2 = "วันที่ 24 เวลา 09.30 – 10.30 น. เเละ 13.30 – 14.30 น."
+            this.modalmsg = "Workshop พิเศษ “Build your iOS App” การอบรมการเขียน App ด้วย iOS ที่จะพาน้องๆ ไปทดลองทำ application เพื่อใช้งานบนระบบปฏิบัติการ iOS ที่ใช้บน iPhone ด้วยตัวเอง พบกับการเรียนรู้ทั้งทฤษฏีและปฏิบัติ ที่จะทำให้น้องๆ ได้รู้และเข้าใจพื้นฐานการทำงานของส่วนประกอบของต่างๆ ของ application ในเบื้องต้นว่ามีอะไรบ้าง ทำงานร่วมกันได้อย่างไร"
             this.showModal = true
         },
         infoNetSec() {
@@ -617,6 +686,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+้้้
+
+
+html {
+  scroll-behavior: smooth;
+}
 #mainBanner {
     width: 100%;
 }
@@ -723,18 +798,18 @@ a:hover {color: inherit; text-decoration: none;}
 button
 ---------------------*/
 .btn-primary {
-	background-color: #22409a;
-	border-color: #22409a;
+	background-color: #fdb127;
+	border-color: #fdb127;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
     width: fit-content;
     padding: 0.75em 2em;
     margin: 0.5em 0.75em;
-    background-color: #22409a;
+    background-color: #fdb127;
     color: #FFF;
     border-radius: 1em;
-    border-color: #22409a;
+    border-color: #fdb127;
 }
 a.btn:hover {
     transform: scale(1.1);
@@ -742,7 +817,7 @@ a.btn:hover {
 }
 
 a.nav-link {
-	color: #22409a;
+	color: #fdb127;
 	font-size: 1.25em;
 }
 
@@ -819,7 +894,7 @@ bebras section
 ---------------------*/
 
 #bebrasSection {
-	background-color: #fdb127;
+	background-color: #22409a;
 	color: white;
 }
 
@@ -860,19 +935,19 @@ activity section
 }
 
 .activityCard h3 {
+    font-size: 1.3em;
     color: #3b6f8d;
+}
+
+.activityCard p {
+    font-size: 1.2em;
+    // color: #3b6f8d;
 }
 
 .activityCard img{
 	width: 50%;
 	transition: all 0.3s;
 
-}
-
-.activityCard img:hover{
-	width: 55%;
-	border: 4px solid #2da9dd;
-	border-radius: 15px;
 }
 
 /*--------------------
@@ -892,7 +967,13 @@ competition section
 }
 
 .competitionCard h3 {
+    font-size: 1.3em;
 	color: #3b6f8d;
+}
+
+.competitionCard p {
+    font-size: 1.2em;
+	// color: #3b6f8d;
 }
 
 .competitionCard img{
@@ -901,18 +982,13 @@ competition section
 
 }
 
-.competitionCard img:hover{
-	width: 55%;
-	border: 4px solid #2da9dd;
-	border-radius: 15px;
-}
 
 /*--------------------
 workshop section
 ---------------------*/
 
 #workshopSection {
-	background-color: #fdb127;
+	background-color: #22409a;
 	color: white;
 }
 
@@ -921,8 +997,13 @@ workshop section
     transition: all 0.3s;
 }
 
-.workshopCard img:hover {
-	width: 110%;
+.workshopCard h3 {
+    color:#fdb127;
+    font-size: 1.3em;
+}
+
+.workshopCard p {
+    font-size: 1.2em;
 }
 
 .workshopCard .row {
@@ -1004,17 +1085,10 @@ responsive
 		width: 80%;
     }
     
-    .activityCard img:hover, .competitionCard img:hover {
-		width: 85%;
-    }
-    
 	.workshopCard img {
 		width: 120%;
     }
     
-    .workshopCard img:hover {
-		width: 125%;
-	}
 	.rallyCard {
         color: #777;
         border-radius: 15px;
@@ -1069,6 +1143,10 @@ responsive
 
     .fas {
         font-size: 16px;
+    }
+
+    .line-right {
+        border-right: none;
     }
 }
 

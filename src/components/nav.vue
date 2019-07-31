@@ -3,7 +3,7 @@
         <b-navbar toggleable="md" type="light" variant="">
             <div class="container">
 
-                <b-navbar-brand href="/">
+                <b-navbar-brand href="https://www.it.kmitl.ac.th/th/">
                     <img class="navBrandImg" src="https://edu.bstudio.click/openhouse-2018/assets/img/logo-sym.svg">
                 </b-navbar-brand>
 
@@ -13,6 +13,7 @@
                     <b-navbar-nav class="ml-auto">
                         <b-nav-item > <router-link tag="a" to="/"> หน้าหลัก </router-link> </b-nav-item>
                         <b-nav-item > <router-link tag="a" to="/schedule"> กำหนดการ </router-link> </b-nav-item>
+                        <b-nav-item v-if="this.$route.name === 'index'" href="#competitionSection"> การเเข่งขัน </b-nav-item>
                     </b-navbar-nav>
                     
                 </b-collapse>
