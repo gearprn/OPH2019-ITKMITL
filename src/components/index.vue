@@ -7,7 +7,7 @@
         <section id="infoSection" class="section">
             <div class="container">
                 <div class="text">
-                    <h1>ปลดล๊อคทางความคิด เเล้วดีไซน์ชีวิตอนาคตด้วยตัวคุณ</h1>
+                    <h1>ปลดล็อกทางความคิด เเล้วดีไซน์ชีวิตอนาคตด้วยตัวคุณ</h1>
                     <h2>23 - 24 สิงหาคม 2562</h2>
                     <h2>ตั้งแต่เวลา 9.00 เป็นต้นไป</h2>
                     <p>เปิดบ้านไอทีลาดกระบัง "IT LADKRABANG OPEN HOUSE 2019" กลับมาอีกครั้งกับการเปิดบ้านสร้างมุมมองใหม่ ค้นหาคำตอบในสิ่งที่ชอบ พร้อมด้วยการสร้างโอกาสในการเตรียมตัวสู่ไอทีลาดกระบัง มาพบคำตอบได้ในงานนี้ทั้งสาระและความสนุกจากกิจกรรมมากมาย จัดโดยคณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
@@ -48,7 +48,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h2>เรื่องราวดีๆ ที่ IT ลาดกระบัง</h2>
-                        <h3>เรื่อง "ปลดล๊อคทางความคิดอย่ายึดติดกับ IT แบบเดิมๆ"</h3>
+                        <h3>เรื่อง "ปลดล็อกทางความคิดอย่ายึดติดกับ IT แบบเดิมๆ"</h3>
                         <!-- <p>การใช้ชีวิตในไอที ลาดกระบัง การเรียน อยู่หอ เรื่องราวดีๆ ที่พี่อยากมาแบ่งบันน้องๆ ทุกคน</p> -->
                         <hr>
                         <p>สถานที่ ห้องประชุมใหญ่ (Auditorium) | วันศุกร์ที่ 23 สิงหาคม 2562 | เวลา 10.00 – 11.30 น.</p>
@@ -123,7 +123,7 @@
                         <div class="col-lg-3 col-6 gridCard">
                             <router-link tag="a" to="/detailsNetsec">
                                 <div class="competitionCard">
-                                    <img src="https://edu.bstudio.click/openhouse-2018/assets/img/compet_security.svg">
+                                    <img src="@/assets/icon_network.png">
                                     <h3 class="mt-2">การแข่งขันความปลอดภัยของระบบคอมพิวเตอร์</h3>
                                     <h4 class="more-info">สมัครการเเข่งขัน</h4>
                                 </div>
@@ -133,7 +133,7 @@
                         <div class="col-lg-3 col-6 gridCard">
                             <router-link tag="a" to="/detailsEsport">
                                 <div class="competitionCard">
-                                    <img src="https://edu.bstudio.click/openhouse-2018/assets/img/compet_game.svg">
+                                    <img src="@/assets/icon_e-sport.png">
                                     <h3 class="mt-2">การแข่งขันกีฬาอิเล็กทรอนิกส์ E-Sport</h3>
                                     <h4 class="more-info">สมัครการเเข่งขัน</h4>
                                 </div>
@@ -143,7 +143,7 @@
                         <div class="col-lg-3 col-6 gridCard">
                             <router-link tag="a" to="/detailsData">
                                 <div class="competitionCard">
-                                    <img src="https://edu.bstudio.click/openhouse-2018/assets/img/compet_math.svg">
+                                    <img src="@/assets/icon_data sci.png">
                                     <h3 class="mt-2">การแข่งขันแก้ปัญหาด้านวิทยาการข้อมูล </h3>
                                     <h4 class="more-info">สมัครการเเข่งขัน</h4>
                                 </div>
@@ -154,7 +154,7 @@
                         <div class="col-lg-3 col-6 gridCard">
                             <router-link tag="a" to="/detailsPhp">
                                 <div class="competitionCard">
-                                    <img src="https://edu.bstudio.click/openhouse-2018/assets/img/compet_website.svg">
+                                    <img src="@/assets/icon_web.png">
                                     <h3 class="mt-2">การแข่งขันพัฒนาเว็บไซต์ด้วย PHP และ JavaScript</h3>
                                     <h4 class="more-info">สมัครการเเข่งขัน</h4>
                                 </div>
@@ -245,7 +245,7 @@
                         <div class="workshopCard">
                             <div class="row" @click="infoIOS()" style="cursor:pointer;">
                                 <div class="col-4 logo">
-                                    <img src="@/assets/WORKSHOP_IOS App.jpg">
+                                    <img src="@/assets/WORKSHOP_IOS App.png">
                                 </div>
                                 <div class="col-8 info text-center">
                                     <h3>Build your iOS App</h3>
@@ -497,6 +497,32 @@
                 </div>
             </div>
         </section>
+
+        <div class="container-fluid mt-5 mb-5">
+            <section id="sponsorSection" class="section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col-lg-2 col-12 Aligner">
+                            <h3>สนับสนุนโดย</h3>
+                        </div>
+                        <div class="col-lg-2 col-6 d-flex flex-wrap align-items-center">
+                            <img src="@/assets/LOGO jpg file_๑๙๐๘๐๑_0001.jpg" class="w-100">
+                        </div>
+                        <div class="col-lg-2 col-6 d-flex flex-wrap align-items-center">
+                            <img src="@/assets/LOGO jpg file_๑๙๐๘๐๑_0004.jpg" class="w-100">
+                        </div>
+                        <div class="col-lg-2 col-6 d-flex flex-wrap align-items-center">
+                            <img src="@/assets/LOGO jpg file_๑๙๐๘๐๑_0002.jpg" class="w-100">
+                        </div>
+                        <div class="col-lg-2 col-6 d-flex flex-wrap align-items-center">
+                            <img src="@/assets/LOGO jpg file_๑๙๐๘๐๑_0003.jpg" class="w-100">
+                        </div>
+                        <div class="col-1"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
     
         <div v-if="showModal">
             <transition name="fade">
@@ -686,8 +712,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-้้้
 
+.Aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+้้้
+.sponsorImg{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
 
 html {
   scroll-behavior: smooth;
