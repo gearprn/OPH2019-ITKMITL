@@ -200,7 +200,7 @@
                                 <div class="col-8 info text-center">
                                     <h3>เชื่อมต่อทุกสิ่งด้วย IoT</h3>
                                     <!-- <p><strong>Networks: IoT Connecting Things</strong> -->
-                                    <p>ถ้าทุกสิ่งเชื่อมต่อกับ Internet ได้จะเป็นเช่นไร?</p>
+                                    <p>ถ้าทุกสิ่งเชื่อมต่อกับ Internet<br>ได้จะเป็นเช่นไร?</p>
                                     <p class="more-info">ดูรายละเอียด</p>
                                 </div>
                             </div>
