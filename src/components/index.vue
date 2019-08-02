@@ -52,7 +52,8 @@
                         <!-- <p>การใช้ชีวิตในไอที ลาดกระบัง การเรียน อยู่หอ เรื่องราวดีๆ ที่พี่อยากมาแบ่งบันน้องๆ ทุกคน</p> -->
                         <hr>
                         <p>สถานที่ ห้องประชุมใหญ่ (Auditorium) | วันศุกร์ที่ 23 สิงหาคม 2562 | เวลา 10.00 – 11.30 น.</p>
-                        <p>ไขทุกข้อสงสัย เปิดมุมมองใหม่ หมดยุคเรียนไอทีแบบเดิมๆ รู้ก่อนเลือกเรียนจะได้ไม่เสียเวลา พบกับเสวนาการศึกษาที่มาพร้อมกับความบันเทิง  พร้อมรับของที่ระลึกแสนเก๋ในงาน พบกันได้ที่งานเปิดบ้านคณะไอทีลาดกระบัง : IT Ladkrabang Open House  2019</p>
+                        <p>ไขทุกข้อสงสัย เปิดมุมมองใหม่ หมดยุคเรียนไอทีแบบเดิมๆ รู้ก่อนเลือกเรียนจะได้ไม่เสียเวลา พบกับเสวนาการศึกษาที่มาพร้อมกับความบันเทิง พร้อมรับของที่ระลึกแสนเก๋ในงาน</p>
+                        <p>พบกันได้ที่งานเปิดบ้านคณะไอทีลาดกระบัง : IT Ladkrabang Open House  2019</p>
                     </div>
                     
                 </div>
@@ -144,7 +145,7 @@
                             <router-link tag="a" to="/detailsData">
                                 <div class="competitionCard">
                                     <img src="@/assets/icon_data sci.png">
-                                    <h3 class="mt-2">การแข่งขันแก้ปัญหาด้านวิทยาการข้อมูล </h3>
+                                    <h3 class="mt-2">การแข่งขันแก้ปัญหา ด้านวิทยาการข้อมูล</h3>
                                     <h4 class="more-info">สมัครการเเข่งขัน</h4>
                                 </div>
                             </router-link>
@@ -184,7 +185,7 @@
                                 <div class="col-8 info text-center">
                                     <h3>Joy Story จินตนาการทะลุมิติ กับ Animation และ AR</h3>
                                     <!-- <p><strong>Multimedia</strong> -->
-                                    <p>สนุกกับการปลดปล่อยจินตนาการเสมือนจริง</p>
+                                    <p>สนุก ปลดปล่อย จินตนาการเสมือนจริง</p>
                                     <p class="more-info">ดูรายละเอียด</p>
                                 </div>
                             </div>
@@ -292,7 +293,7 @@
                         <div class="rallyCard">
                             <img src="https://edu.bstudio.click/openhouse-2018/assets/img/rally_inphonic.jpg">
                             <h2>ชุมนุม Inphonic</h2>
-                            <p>ชุมนุมของผู้ชื่นชอบในดนตรีของคณะไอที </p>
+                            <p>ชุมนุมของผู้ชื่นชอบ<br>ในดนตรีของคณะไอที </p>
                         </div>
                     </div>
                     
@@ -501,9 +502,9 @@
         <div class="container-fluid mt-5 mb-5">
             <section id="sponsorSection" class="section">
                 <div class="container">
-                    <div class="row">
+                    <div class="row textMid">
                         <div class="col-1"></div>
-                        <div class="col-lg-2 col-12 Aligner">
+                        <div class="col-lg-2 col-12">
                             <h3>สนับสนุนโดย</h3>
                         </div>
                         <div class="col-lg-2 col-6 d-flex flex-wrap align-items-center">
@@ -713,7 +714,7 @@ export default {
 
 <style lang="scss" scoped>
 
-.Aligner {
+.textMid {
   display: flex;
   align-items: center;
   justify-content: center;

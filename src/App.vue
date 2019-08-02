@@ -37,12 +37,14 @@ export default {
         url('assets/fonts/IBMPlexThai-Text.woff2') format('woff2'),
         url('assets/fonts/IBMPlexThai-Thin.woff2') format('woff2');
 }
+@import url('https://fonts.googleapis.com/css?family=Prompt&display=swap');
 
 html {
   scroll-behavior: smooth;
 }
 #app {
   font-family: 'IBMPlexThai',sans-serif;
+  // font-family: 'Prompt', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
