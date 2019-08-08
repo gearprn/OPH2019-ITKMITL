@@ -12,7 +12,7 @@
                     <h2>ตั้งแต่เวลา 9.00 เป็นต้นไป</h2>
                     <p>เปิดบ้านไอทีลาดกระบัง "IT LADKRABANG OPEN HOUSE 2019" กลับมาอีกครั้งกับการเปิดบ้านสร้างมุมมองใหม่ ค้นหาคำตอบในสิ่งที่ชอบ พร้อมด้วยการสร้างโอกาสในการเตรียมตัวสู่ไอทีลาดกระบัง มาพบคำตอบได้ในงานนี้ทั้งสาระและความสนุกจากกิจกรรมมากมาย จัดโดยคณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
                     <router-link tag="a" to="/schedule" class="btn btn-primary btn-lg active" role="button" >กำหนดการ</router-link>
-                    <a href="https://oph2019-kmitl-c2dac.web.app/" class="btn btn-primary btn-lg active" role="button">ลงทะเบียนสำหรับผู้เข้าชมงาน</a>
+                    <a href="https://oph2019-kmitl-c2dac.web.app/register" class="btn btn-primary btn-lg active" role="button">ลงทะเบียนสำหรับผู้เข้าชมงาน</a>
                 </div>  
             </div>
         </section>
