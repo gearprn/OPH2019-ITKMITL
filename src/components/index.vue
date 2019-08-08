@@ -246,7 +246,7 @@
                         <div class="workshopCard">
                             <div class="row" @click="infoIOS()" style="cursor:pointer;">
                                 <div class="col-4 logo">
-                                    <img src="@/assets/WORKSHOP_IOS App.png">
+                                    <img src="@/assets/WORKSHOP_IOS App-2.png">
                                 </div>
                                 <div class="col-8 info text-center">
                                     <h3>Build your iOS App</h3>
@@ -503,10 +503,12 @@
             <section id="sponsorSection" class="section">
                 <div class="container">
                     <div class="row textMid">
-                        <div class="col-1"></div>
-                        <div class="col-lg-2 col-12">
-                            <h3>สนับสนุนโดย</h3>
+                        <div class="col-lg-3 col-12">
+                            <h2>สนับสนุนโดย</h2>
                         </div>
+                    </div>
+                        
+                    <div class="row textMid">
                         <div class="col-lg-2 col-6 d-flex flex-wrap align-items-center">
                             <img src="@/assets/LOGO jpg file_๑๙๐๘๐๑_0001.jpg" class="w-100">
                         </div>
@@ -519,7 +521,15 @@
                         <div class="col-lg-2 col-6 d-flex flex-wrap align-items-center">
                             <img src="@/assets/LOGO jpg file_๑๙๐๘๐๑_0003.jpg" class="w-100">
                         </div>
-                        <div class="col-1"></div>
+
+                        <div class="col-lg-2 col-6 d-flex flex-wrap align-items-center">
+                            <img src="@/assets/12622192_769446419826376_3838988266592171397_o.png" class="w-100">
+                        </div>
+
+                        <div class="col-lg-2 col-6 d-flex flex-wrap align-items-center">
+                            <img src="@/assets/Siri Energy_Logo.png" class="w-100">
+                        </div>
+                        
                     </div>
                 </div>
             </section>
