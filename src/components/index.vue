@@ -509,24 +509,27 @@
                     </div>
                         
                     <div class="row textMid">
-                        <div class="col-lg-2 col-6 d-flex flex-wrap align-items-center">
+                        <div class="mt-2 col-lg-3 col-6 d-flex flex-wrap align-items-center">
                             <img src="@/assets/LOGO jpg file_๑๙๐๘๐๑_0001.jpg" class="w-100">
                         </div>
-                        <div class="col-lg-2 col-6 d-flex flex-wrap align-items-center">
+                        <div class="mt-2 col-lg-3 col-6 d-flex flex-wrap align-items-center">
+                            <img src="@/assets/BDMS_new 2015.png" class="w-100">
+                        </div>
+                        <div class="mt-2 col-lg-3 col-6 d-flex flex-wrap align-items-center">
                             <img src="@/assets/LOGO jpg file_๑๙๐๘๐๑_0004.jpg" class="w-100">
                         </div>
-                        <div class="col-lg-2 col-6 d-flex flex-wrap align-items-center">
+                        <div class="mt-2 col-lg-3 col-6 d-flex flex-wrap align-items-center">
                             <img src="@/assets/LOGO jpg file_๑๙๐๘๐๑_0002.jpg" class="w-100">
                         </div>
-                        <div class="col-lg-2 col-6 d-flex flex-wrap align-items-center">
+                        <div class="mt-2 col-lg-3 col-6 d-flex flex-wrap align-items-center">
                             <img src="@/assets/LOGO jpg file_๑๙๐๘๐๑_0003.jpg" class="w-100">
                         </div>
 
-                        <div class="col-lg-2 col-6 d-flex flex-wrap align-items-center">
+                        <div class="mt-2 col-lg-3 col-6 d-flex flex-wrap align-items-center">
                             <img src="@/assets/12622192_769446419826376_3838988266592171397_o.png" class="w-100">
                         </div>
 
-                        <div class="col-lg-2 col-6 d-flex flex-wrap align-items-center">
+                        <div class="mt-2 col-lg-3 col-6 d-flex flex-wrap align-items-center">
                             <img src="@/assets/Siri Energy_Logo.png" class="w-100">
                         </div>
                         
