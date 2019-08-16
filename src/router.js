@@ -13,6 +13,11 @@ import RegisEsport from './views/regisEsport.vue'
 import RegisData from './views/regisData.vue'
 import RegisPhp from './views/regisPhp.vue'
 
+import NetsecContestant from './views/ContestantNetsec.vue'
+import PhpContestant from './views/ContestantPhp.vue'
+import DataContestant from './views/ContestantData.vue'
+
+
 Vue.use(Router)
 
 export default new Router({
@@ -68,6 +73,21 @@ export default new Router({
       path: '/detailsPhp/register',
       name: 'phpregister',
       component: RegisPhp,
+    },
+    {
+      path: '/detailsNetSec/contestant',
+      name: 'netsecContestant',
+      component: NetsecContestant,
+    },
+    {
+      path: '/detailsPhp/contestant',
+      name: 'phpContestant',
+      component: PhpContestant,
+    },
+    {
+      path: '/detailsData/contestant',
+      name: 'dataContestant',
+      component: DataContestant,
     },
   ],
   scrollBehavior (to, from, savedPosition) {

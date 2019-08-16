@@ -532,6 +532,10 @@
                         <div class="mt-2 col-lg-3 col-6 d-flex flex-wrap align-items-center">
                             <img src="@/assets/Siri Energy_Logo.png" class="w-100">
                         </div>
+
+                        <div class="mt-2 col-lg-3 col-6 d-flex flex-wrap align-items-center">
+                            <img src="@/assets/BKI logo_for online_lockup Logo.png" class="w-100">
+                        </div>
                         
                     </div>
                 </div>
