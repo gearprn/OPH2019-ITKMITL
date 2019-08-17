@@ -127,6 +127,7 @@
                                     <img src="@/assets/icon_network.png">
                                     <h3 class="mt-2">การแข่งขันความปลอดภัยของระบบคอมพิวเตอร์</h3>
                                     <h4 class="more-info">สมัครการเเข่งขัน</h4>
+                                    <router-link tag="a" to="/detailsNetSec/contestant" class="btn btn-primary active"> ผู้มีสิทธิ์เข้าร่วมการเเข่งขัน </router-link>
                                 </div>
                             </router-link>
                         </div>
@@ -137,6 +138,7 @@
                                     <img src="@/assets/icon_e-sport.png">
                                     <h3 class="mt-2">การแข่งขันกีฬาอิเล็กทรอนิกส์ E-Sport</h3>
                                     <h4 class="more-info">สมัครการเเข่งขัน</h4>
+                                    <!-- <router-link tag="a" to="" class="btn btn-primary active disable">  </router-link> -->
                                 </div>
                             </router-link>
                         </div>
@@ -147,6 +149,7 @@
                                     <img src="@/assets/icon_data sci.png">
                                     <h3 class="mt-2">การแข่งขันแก้ปัญหา ด้านวิทยาการข้อมูล</h3>
                                     <h4 class="more-info">สมัครการเเข่งขัน</h4>
+                                    <router-link tag="a" to="/detailsData/contestant" class="btn btn-primary active"> ผู้มีสิทธิ์เข้าร่วมการเเข่งขัน </router-link>
                                 </div>
                             </router-link>
                         </div> 
@@ -158,6 +161,7 @@
                                     <img src="@/assets/icon_web.png">
                                     <h3 class="mt-2">การแข่งขันพัฒนาเว็บไซต์ด้วย PHP และ JavaScript</h3>
                                     <h4 class="more-info">สมัครการเเข่งขัน</h4>
+                                    <router-link tag="a" to="/detailsPhp/contestant" class="btn btn-primary active"> ผู้มีสิทธิ์เข้าร่วมการเเข่งขัน </router-link>
                                 </div>
                             </router-link>
                         </div>
