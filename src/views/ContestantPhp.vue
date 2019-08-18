@@ -80,7 +80,7 @@
 
         <div class="col-md-6 col-sm- 12 text-left mt-3">
           <div class="pl-2 teamBox">
-            <h5>ชื่อทีม: The UinqueCode</h5>
+            <h5>ชื่อทีม: The UniqueCode</h5>
             <h5>สถานศึกษา: โรงเรียนเบญจมราชรังสฤษฏิ์</h5>
             <h5>สมาชิกในทีม</h5>
             <ul>
