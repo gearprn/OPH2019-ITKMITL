@@ -16,6 +16,7 @@ import RegisPhp from './views/regisPhp.vue'
 import NetsecContestant from './views/ContestantNetsec.vue'
 import PhpContestant from './views/ContestantPhp.vue'
 import DataContestant from './views/ContestantData.vue'
+import EsportContestant from './views/ContestantEsport.vue'
 
 
 Vue.use(Router)
@@ -88,6 +89,11 @@ export default new Router({
       path: '/detailsData/contestant',
       name: 'dataContestant',
       component: DataContestant,
+    },
+    {
+      path: '/detailsEsport/contestant',
+      name: 'esportContestant',
+      component: EsportContestant,
     },
   ],
   scrollBehavior (to, from, savedPosition) {

@@ -138,7 +138,7 @@
                                     <img src="@/assets/icon_e-sport.png">
                                     <h3 class="mt-2">การแข่งขันกีฬาอิเล็กทรอนิกส์ E-Sport</h3>
                                     <h4 class="more-info">สมัครการเเข่งขัน</h4>
-                                    <!-- <router-link tag="a" to="" class="btn btn-primary active disable">  </router-link> -->
+                                    <router-link tag="a" to="/detailsEsport/contestant" class="btn btn-primary active"> ผู้มีสิทธิ์เข้าร่วมการเเข่งขัน </router-link>
                                 </div>
                             </router-link>
                         </div>
