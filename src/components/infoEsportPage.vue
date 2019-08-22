@@ -90,6 +90,7 @@
         </div>
 
         <!-- <router-link tag="a" to="/detailsEsport/register" class="btn btn-primary btn-lg active mb-4" role="button">สมัครการเเข่งขัน</router-link> -->
+        <router-link tag="a" to="/detailsEsport/contestant" class="btn btn-primary btn-lg active mb-4" role="button">ผู้มีสิทธิ์เข้าร่วมการเเข่งขัน</router-link>
     </div>
 </template>
 
